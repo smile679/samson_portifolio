@@ -18,12 +18,12 @@ const Info = () =>{
           </h2>
         </div>
         <div className='text-center w-1/1'>
-          <p className='para'>" I focus on building clean, responsive, and user-friendly websites "</p>
+          <p className='para'>" I focus on building clean, responsive, and user-friendly websites"</p>
         </div>
         <div className='flex flex-col-reverse'>
-          <div className='my-5 sm:ml-20 flex'>
-            <button className='button mr-5 xs:mr-10'>Let's talk</button>
-            <button className='button2'>Download CV</button>
+          <div className='relative my-5 sm:ml-20 flex'>
+            <button className='button mr-5 xs:mr-10' onClick={()=>{alert("SORRY, Project Under maintanance, To contact me use our Telegram, Whatsapp, Instagram icons.. ")}}>Let's talk</button>
+            <button className='button2' onClick={()=>{alert("Coming Soon")}}>Download CV</button>
           </div>
           <div className='flex justify-evenly'>
               <a href="https://t.me/sami_gra"><img src={ tg } alt="link" className="icons hover:drop-shadow-sky-500"/></a>

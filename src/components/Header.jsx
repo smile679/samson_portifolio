@@ -13,22 +13,22 @@ const [showMenu, setShowMenu] = useState(false);
         </h2>
         <ul>
           <li>
-            <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Home' spy={true} smooth={true} duration={500} offset={-100}>
+            <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Home' spy={true} smooth={true} duration={500} offset={-75}>
               Home
              </Link>
           </li>
           <li>
-            <Link activeClass="text-[#45f8b7] border-b-2" to='About' spy={true} smooth={true} duration={500} offset={30}>
+            <Link activeClass="text-[#45f8b7] border-b-2" to='About' spy={true} smooth={true} duration={500} offset={-75}>
             About
             </Link>
             </li>
           <li>
-            <Link activeClass="text-[#45f8b7] border-b-2" to='Service' spy={true} smooth={true} duration={500} offset={30}>
+            <Link activeClass="text-[#45f8b7] border-b-2" to='Service' spy={true} smooth={true} duration={500} offset={-75}>
             Service
             </Link>
           </li>
             <li>
-            <Link activeClass="text-[#45f8b7] border-b-2" to='Skills' spy={true} smooth={true} duration={500} offset={30}>
+            <Link activeClass="text-[#45f8b7] border-b-2" to='Skills' spy={true} smooth={true} duration={500} offset={-75}>
              Skils
             </Link>
             </li>
