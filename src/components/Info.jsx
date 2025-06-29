@@ -13,22 +13,25 @@ const Info = () =>{
            <h1 className='flex flex-col sm:flex-row text-shadow-white text-shadow-2xs'>
             <span className="text-nowrap"> SAMSON GIDEY</span>
           </h1>
-         <h2 className='text-[#3EB489] font-bold -tracking-tighter flex justify-items-center-safe'>
-          <span className='text-gray-500 mr-3'>I'M</span>FRONTEND DEV.
+         <h2 className='text-emerald-500 font-bold -tracking-tighter flex justify-items-center-safe '>
+          <span className='text-gray-400 mr-3'>I'M</span>FRONTEND DEV.
           </h2>
         </div>
         <div className='text-center w-1/1'>
-          <p className='para'>" I focus on building clean,responsive,and user-friendly websites "</p>
+          <p className='para'>" I focus on building clean, responsive, and user-friendly websites "</p>
         </div>
-        <div className='flex items-center flex-col-reverse sm:flex-row md:ml-5'>
-          <button className='button text-nowrap my-5 sm:mx-5'>Lets's talk</button>
-          <div className='flex justify-center'>
-              <a href="https://t.me/sami_gra"><img src={ tg } alt="link" className="icons"/></a>
-              <a href="https://wa.me/251943712048" target='_blank'><img src={ whatsapp } alt="link" className="icons"/></a>
-              <a href="https://instagram.com/samison_gidey"><img src={ instagram } alt="link" className="icons"/></a>
-              <a href="https://www.linkedin.com/in/samson-gidey-b5a905303" target='_blank' rel="noopener noreferrer"><img src={ linkedin } alt="linkedin" className="icons"/></a>
-              <a href="https://www.behance.net/samuelgidey1" target='_blank'><img src={ behance } alt="link" className="icons pt-2"/></a>
-              <a href="https://github.com/smile679" target='_blank'><img src={ github } alt="link" className="icons"/></a>
+        <div className='flex flex-col-reverse'>
+          <div className='my-5 sm:ml-20 flex'>
+            <button className='button mr-5 xs:mr-10'>Let's talk</button>
+            <button className='button2'>Download CV</button>
+          </div>
+          <div className='flex justify-evenly'>
+              <a href="https://t.me/sami_gra"><img src={ tg } alt="link" className="icons hover:drop-shadow-sky-500"/></a>
+              <a href="https://wa.me/251943712048" target='_blank'><img src={ whatsapp } alt="link" className="icons hover:drop-shadow-green-500"/></a>
+              <a href="https://instagram.com/samison_gidey"><img src={ instagram } alt="link" className="icons hover:drop-shadow-pink-500"/></a>
+              <a href="https://www.linkedin.com/in/samson-gidey-b5a905303" target='_blank' rel="noopener noreferrer"><img src={ linkedin } alt="linkedin" className="icons hover:drop-shadow-sky-500"/></a>
+              <a href="https://www.behance.net/samuelgidey1" target='_blank'><img src={ behance } alt="link" className="icons pt-2 hover:drop-shadow-blue-500"/></a>
+              <a href="https://github.com/smile679" target='_blank'><img src={ github } alt="link" className="icons hover:drop-shadow-black"/></a>
           </div>
           </div>
       </div>

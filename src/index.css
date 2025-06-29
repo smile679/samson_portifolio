@@ -31,11 +31,7 @@
   body {
     font-family: "Poppins", serif;
     font-optical-sizing: auto;
-    background: linear-gradient(
-      135deg,
-      #242424 50%,
-      #2A3439 100%
-    );
+    background: linear-gradient(to bottom right, #1f2937, #0f766e);
     overflow-x: hidden;
     min-width: 320px;
     place-items: center;
@@ -43,11 +39,11 @@
   }
 
   h1 {
-    @apply text-[#3EB489] text-4xl xs:text-5xl font-bold text-center sm:text-6xl md:text-5xl lg:text-6xl;
+    @apply text-emerald-500 sm:tracking-wider text-4xl xs:text-5xl font-bold text-center sm:text-6xl md:text-5xl lg:text-6xl;
   }
 
   h2 {
-    @apply  text-2xl sm:text-3xl md:text-3xl font-semibold text-white ;
+    @apply  text-2xl sm:text-3xl md:text-3xl font-semibold text-white text-shadow-gray-800 text-shadow-lg;
   }
   h3 {
     @apply text-xl font-bold text-white;
@@ -77,7 +73,7 @@
     }
     & nav ul li {
       @apply font-bold text-[#3EB489] hover:text-[#45f8b7]  hover:-translate-y-0.5 cursor-pointer
-      text-shadow-emerald-600/50 text-shadow-2xs;
+      text-shadow-emerald-600/50 hover:text-shadow-lg hover:scale-110;
     }
      
   }
@@ -85,7 +81,7 @@
   .contact {
     @apply relative flex flex-row justify-center items-center bg-[#3EB489] rounded-full p-1 pr-3 box-border cursor-pointer
     hover:bg-transparent hover:ring-2 hover:text-[#3EB489] transition-all duration-300
-    shadow-emerald-600/50 shadow-lg;
+    shadow-emerald-600/50 shadow-lg hover:scale-105;
 
   & img {
     @apply w-10 h-10 object-cover rounded-full animate-pulse;
@@ -103,7 +99,7 @@
   }
   .image {
     @apply w-full flex justify-center items-start animate-wiggle drop-shadow-[#3EB489] drop-shadow-2xl;
-    & img {
+  &  img {
       @apply  w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px]
       border-white border-10 border-dashed border-x-[#3EB489] rounded-full object-cover;
     }
@@ -113,10 +109,10 @@
     @apply w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 text-center py-30 sm:py-40 px-4;
 
     & h1 {
-      @apply  text-gray-800 text-shadow-lg;
+      @apply  text-gray-800 text-shadow-emerald-800 text-shadow-lg;
     }
     & p {
-      @apply  max-w-3xl sm:max-w-5xl  mx-auto text-lg text-gray-800 text-shadow-lg leading-relaxed my-5
+      @apply  max-w-3xl sm:max-w-5xl  mx-auto text-lg text-gray-900 text-shadow-lg leading-relaxed my-5
   }
 }
 
@@ -133,22 +129,24 @@
       @apply w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
     }
     & .lang h3 {
-      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter;
+      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
     }
     & .language ul {
-      @apply list-disc pl-5 text-white text-xl space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2 text-shadow-lg;
+      @apply list-disc pl-5 text-white text-xl space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2
+      text-shadow-emerald-800 text-shadow-lg;
     }
     & .hobbies {
       @apply flex justify-center items-center;
     }
     & .hobbies svg {
-      @apply  w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
+      @apply  w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse ;
     }
     & .hobbies h3 {
-      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter;
+      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
     }
     &  ul {
-      @apply list-disc pl-5 text-xl text-white space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2 text-shadow-lg;
+      @apply list-disc pl-5 text-xl text-white space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2
+      text-shadow-emerald-800 text-shadow-lg;
     }
 
   }
@@ -161,15 +159,17 @@
     }
     & .div-ser svg {
       @apply w-10 sm:w-13  inline-block mr-3 text-[#3EB489] hover:hover:-translate-y-0.5
+      drop-shadow-gray-800 drop-shadow-lg;
     }
-     & .div-ser h2 {
-      @apply font-bold text-3xl sm:text-4xl;
+     & .div-ser h1 {
+      @apply font-bold  text-shadow-gray-800 text-shadow-lg;
      }
     & .service-list {
       @apply w-full grid grid-cols-1 md:grid-cols-2 gap-5 text-pretty md:px-10 max-xs:pl-3;
   }
     & .service-list h3 {
-      @apply text-[#3EB489] text-2xl xs:text-3xl mb-2.5 py-5 max-xs:-ml-2;
+      @apply text-[#3EB489] text-2xl xs:text-3xl mb-2.5 py-5 max-xs:-ml-2
+      text-shadow-gray-800 text-shadow-lg;
     }
     & .service-list ul {
       @apply list-disc pl-5 text-white text-lg space-y-2 font-bold text-pretty;
@@ -178,9 +178,14 @@
 
   .skills {
     @apply center w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 py-5 xs:py-10 px-5 sm:px-20 pb-10;
-
+     & .skills-header {
+     @apply w-full flex justify-center items-center my-5 sm:my-10;
+    }
+    & .skills-header svg {
+      @apply w-10 h-10 sm:w-13 sm:h-13 inline-block mr-3 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
+    }
     &  h1 {
-      @apply text-gray-800 font-extrabold text-shadow-lg py-5;
+      @apply text-gray-800 font-extrabold text-shadow-emerald-800 text-shadow-lg;
     }
 
     & .skills-grid {
@@ -190,13 +195,14 @@
       @apply flex flex-col;
     }
     & .skills-grid h2{
-      @apply text-gray-800 font-extrabold text-shadow-lg py-2;
+      @apply text-gray-800 font-extrabold py-2 text-shadow-emerald-800 text-shadow-lg;
     }
     & .skills-grid ul {
-      @apply text-xl text-white font-bold text-shadow-lg list-disc grid grid-cols-2 gap-x-10 gap-y-3 pl-2;
+      @apply text-xl text-white font-bold list-disc grid grid-cols-2 gap-x-10 gap-y-3 pl-2
+      text-shadow-emerald-800 text-shadow-lg;
     }
-    & .skills-grid img {
-      @apply w-full
+    & .skills-grid .comp-img img {
+      @apply w-full animate-wiggle drop-shadow-emerald-800 drop-shadow-lg
     }
   }
     
@@ -211,15 +217,20 @@
   }
 
 @utility button {
-     @apply bg-[#3EB489] text-white font-bold px-5 py-3 md:px-6 lg:px-8 rounded-lg
+     @apply bg-emerald-500 text-white font-bold text-nowrap px-5 py-3 md:px-6 lg:px-8 rounded-lg
      hover:bg-transparent hover:ring-1 hover:text-[#3EB489] transition-all duration-300 cursor-pointer
      shadow-emerald-600/50 shadow-lg;
   }
+  @utility button2 {
+     @apply bg-transparent ring-1 text-[#3EB489] font-bold text-nowrap px-5 py-3 md:px-6 lg:px-8 rounded-lg  transition-all duration-300 cursor-pointer
+     hover:bg-[#3EB489] hover:text-white shadow-emerald-600/50 shadow-lg;
+  }
 
 @utility icons {
-    @apply w-10 xs:w-15 hover:-translate-y-1 cursor-pointer;
+    @apply w-10 xs:w-15 hover:-translate-y-1 hover:scale-110
+     hover:drop-shadow-lg cursor-pointer;
   }
 
 @utility para {
-    @apply sm:text-2xl xs:w-md text-gray-300 font-normal pl-5;
+    @apply sm:text-2xl xs:w-md text-gray-200 font-normal pl-5;
   }

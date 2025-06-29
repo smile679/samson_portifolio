@@ -6,7 +6,7 @@ const About = ()=>{
       <p>
     I'm a passionate <span class="font-semibold text-amber-50">Frontend Developer</span> and 
     <span class="font-semibold text-amber-50"> Graphic Designer</span> with a strong background in 
-    <span class="font-medium text-amber-50">HTML, CSS, JavaScript</span>, and the 
+    <span class="font-medium text-amber-50"> HTML, CSS, JavaScript</span>, and the 
     <span class="font-medium text-amber-50">Adobe Creative Suite</span>. I specialize in building 
     responsive, user-friendly web interfaces and designing visually compelling digital content. 
     With experience in tools like Figma, Illustrator, and Photoshop, I enjoy combining creativity 
