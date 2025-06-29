@@ -22,7 +22,7 @@ const Info = () =>{
         </div>
         <div className='flex flex-col-reverse'>
           <div className='relative my-5 sm:ml-20 flex'>
-            <button className='button mr-5 xs:mr-10' onClick={()=>{alert("SORRY, Project Under maintanance, To contact me use our Telegram, Whatsapp, Instagram icons.. ")}}>Let's talk</button>
+            <button className='button mr-5 xs:mr-10' onClick={()=>{alert("Sorry,The Project Under maintenance, To contact me, Use our Telegram, WhatsApp, Instagram Icons.. ")}}>Let's talk</button>
             <button className='button2' onClick={()=>{alert("Coming Soon")}}>Download CV</button>
           </div>
           <div className='flex justify-evenly'>
