@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1f2937;
+  --color-secondary: #0f766e;
+
+  --color-light-100: #cecefb;
+  --color-light-200: #a8b5db;
+
+  --color-gray-100: #9ca4ab;
+
+  --color-dark-100: #0f0d23;
+
+  --color-tent1-500: #3EB489;
+  --color-tent1-600: #468376;
+
+  --font-dm-sans: DM Sans, sans-serif;
+
+  --breakpoint-xs: 480px;
+
+   --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(1deg);}
+    50% { transform: rotate(-1deg); }
+  }
+}
+@layer base {
+  body {
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(to bottom right, #1f2937, #0f766e);
+    overflow-x: hidden;
+    min-width: 320px;
+    place-items: center;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    @apply text-emerald-500 sm:tracking-wider text-4xl xs:text-5xl font-bold text-center sm:text-6xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply  text-2xl sm:text-3xl md:text-3xl font-semibold text-white text-shadow-gray-800 text-shadow-lg;
+  }
+  h3 {
+    @apply text-xl font-bold text-white;
+  }
+  p {
+    @apply text-[20px] text-pretty;
+  }
+  main {
+    @apply  max-w-6xl mx-auto flex flex-col items-center relative  scroll-smooth xs:p-5 snap-none;
+  }
+
+}
+
+@layer components {
+  .wrapper {
+    @apply w-full fixed top-0 left-0 z-10 px-5 xs:px-10 py-3 shadow-lg backdrop-blur-md;
+
+    & nav {
+      @apply  hidden sm:flex items-center justify-between;
+    }
+    & nav h2 {
+      @apply sm:ml-5 text-2xl font-bold text-amber-50
+    }
+    & nav ul {
+      @apply flex sm:gap-6  text-lg;
+    }
+    & nav ul li {
+      @apply font-bold text-[#3EB489] hover:text-[#45f8b7]  hover:-translate-y-0.5 cursor-pointer
+      text-shadow-emerald-600/50 hover:text-shadow-lg hover:scale-110;
+    }
+     
+  }
+
+  .contact {
+    @apply relative flex flex-row justify-center items-center bg-[#3EB489] rounded-full p-1 pr-3 box-border cursor-pointer
+    hover:bg-transparent hover:ring-2 hover:text-[#3EB489] transition-all duration-300
+    shadow-emerald-600/50 shadow-lg hover:scale-105;
+
+  & img {
+    @apply w-10 h-10 object-cover rounded-full animate-pulse;
+  }
+  & h3 {
+    @apply text-white font-bold text-nowrap;
+  }
+  }
+
+  .home {
+    @apply w-full flex justify-between items-center flex-col-reverse md:flex-row max-xs:my-40 sm:my-30;
+  }
+  .info {
+    @apply w-full flex flex-col mx-auto max-md:items-center gap-5 mt-5 md:mt-15;
+  }
+  .image {
+    @apply w-full flex justify-center items-start drop-shadow-[#3EB489] drop-shadow-2xl
+    bg-[url('./images/code.png')] bg-cover bg-no-repeat bg-blend-overlay;
+  &  img {
+      @apply  w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px]
+      border-white border-10 border-dashed border-x-[#3EB489] rounded-full object-cover;
+    }
+  }
+
+  .about {
+    @apply w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 text-center py-30 sm:py-40 px-4;
+
+    & h1 {
+      @apply  text-gray-800 text-shadow-emerald-800 text-shadow-lg;
+    }
+    & p {
+      @apply  max-w-3xl sm:max-w-5xl  mx-auto text-lg text-gray-900 text-shadow-lg leading-relaxed my-5
+  }
+}
+
+  .lang-hobbies {
+    @apply w-full flex justify-evenly items-center mt-10 sm:mt-20;
+
+    & .language {
+      @apply flex flex-col justify-center items-center;
+    }
+    & .lang {
+      @apply flex justify-center items-center;
+    }
+    & .lang svg {
+      @apply w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
+    }
+    & .lang h3 {
+      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
+    }
+    & .language ul {
+      @apply list-disc pl-5 text-white text-xl space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2
+      text-shadow-emerald-800 text-shadow-lg;
+    }
+    & .hobbies {
+      @apply flex justify-center items-center;
+    }
+    & .hobbies svg {
+      @apply  w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse ;
+    }
+    & .hobbies h3 {
+      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
+    }
+    &  ul {
+      @apply list-disc pl-5 text-xl text-white space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2
+      text-shadow-emerald-800 text-shadow-lg;
+    }
+
+  }
+
+  .services {
+    @apply w-full center py-20;
+
+    &  .div-ser {
+     @apply w-full flex justify-center items-center my-5 sm:my-10;
+    }
+    & .div-ser svg {
+      @apply w-10 sm:w-13 mr-3 text-[#3EB489] hover:hover:-translate-y-0.5
+      drop-shadow-gray-800 drop-shadow-lg;
+    }
+     & .div-ser h1 {
+      @apply font-bold  text-shadow-gray-800 text-shadow-lg;
+     }
+    & .service-list {
+      @apply w-full grid grid-cols-1 md:grid-cols-2 gap-5 text-pretty md:px-10 max-xs:pl-3;
+  }
+    & .service-list h3 {
+      @apply text-[#3EB489] text-2xl xs:text-3xl mb-2.5 py-5 max-xs:-ml-2
+      text-shadow-gray-800 text-shadow-lg;
+    }
+    & .service-list ul {
+      @apply list-disc pl-5 text-white text-lg space-y-2 font-bold text-pretty;
+    }
+  }
+
+  .skills {
+    @apply center w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 py-5 xs:py-10 px-5 sm:px-20 pb-10
+    bg-[url('./images/it-links.png')] bg-repeat bg-blend-soft-light;
+     & .skills-header {
+     @apply w-full flex justify-center items-center my-5 sm:my-10;
+    }
+    & .skills-header svg {
+      @apply w-10 h-10 sm:w-13 sm:h-13 inline-block mr-3 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
+    }
+    &  h1 {
+      @apply text-gray-800 font-extrabold text-shadow-emerald-800 text-shadow-lg;
+    }
+
+    & .skills-grid {
+      @apply max-w-6xl grid grid-cols-1 md:grid-cols-2;
+    }
+    & .skills-grid .ul-grid {
+      @apply flex flex-col;
+    }
+    & .skills-grid h2{
+      @apply text-gray-800 font-extrabold py-2 text-shadow-emerald-800 text-shadow-lg;
+    }
+    & .skills-grid ul {
+      @apply text-xl text-white font-bold list-disc grid grid-cols-2 gap-x-10 gap-y-3 pl-2
+      text-shadow-emerald-800 text-shadow-lg;
+    }
+    & .skills-grid .comp-img img {
+      @apply w-full drop-shadow-emerald-800 drop-shadow-lg;
+    }
+  }
+  .contact-me {
+    @apply max-w-6xl center pt-10 sm:pt-20;
+
+   & .div-cont {
+      @apply  flex flex-row items-center pt-10;
+    }
+    & .div-cont svg {
+      @apply w-8 h-8 sm:w-10 sm:h-10 mr-3 text-gray-200 hover:hover:-translate-y-0.5;
+    }
+     & .div-cont h2 {
+      @apply text-3xl text-shadow-gray-800 text-shadow-lg tracking-wider;
+     }
+     & .contact-grid {
+      @apply grid grid-cols-1 md:grid-cols-2;
+    }
+    &  .contact-grid form input {
+      @apply w-full text-emerald-600 font-bold bg-gray-200 py-2 sm:py-3 my-3 rounded-md px-3
+      placeholder:mx-5 outline-none shadow-gray-800 shadow-sm;
+    }
+    &  .contact-grid form textarea {
+      @apply w-full h-30 text-emerald-600 font-bold bg-gray-200 py-3 my-3 rounded-md px-3
+      placeholder:mx-5 outline-none shadow-gray-800 shadow-md;
+    }
+    & .contact-grid form button{
+      @apply w-full my-5;
+    }
+    & .contact-grid img {
+      @apply w-full object-cover drop-shadow-emerald-600 drop-shadow-lg hover:drop-shadow-emerald-500 hover:drop-shadow-2xl hover:scale-101;
+    }
+  }
+}
+
+@utility nav-list {
+    @apply hover:text-[#3EB489] text-white hover:-translate-y-0.5 cursor-pointer px-15 py-5;
+  }
+
+@utility center {
+    @apply flex justify-center items-center flex-col;
+  }
+
+@utility button {
+     @apply bg-emerald-500 text-white font-bold text-nowrap px-5 py-3 md:px-6 lg:px-8 rounded-lg
+     hover:bg-transparent hover:ring-1 hover:text-[#3EB489] transition-all duration-300 cursor-pointer
+     shadow-emerald-600/50 shadow-lg;
+  }
+  @utility button2 {
+     @apply bg-transparent ring-1 text-[#3EB489] font-bold text-nowrap px-5 py-3 md:px-6 lg:px-8 rounded-lg 
+     transition-all duration-300 cursor-pointer hover:bg-[#3EB489] hover:text-white shadow-emerald-600/50 shadow-lg;
+  }
+
+@utility icons {
+    @apply w-10 xs:w-15 hover:-translate-y-1 hover:scale-110
+     hover:drop-shadow-lg cursor-pointer;
+  }
+
+@utility para {
+    @apply sm:text-2xl xs:w-md text-gray-200 font-normal pl-5;
+  }
