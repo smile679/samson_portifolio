@@ -98,7 +98,7 @@ const ContactMe = ()=>{
     })
     .catch((error) => {
       console.error('EmailJS error:', error);
-      alert('Failed to send message. Please try again later.');
+      alert('Failed to send message. Please try again.');
     });
      }
      
@@ -126,6 +126,7 @@ const ContactMe = ()=>{
                  </div>
                  <div className='w-full relative'>
                   <p className='absolute left-2.5 -bottom-2 text-[0.8rem] text-red-500' id='message-error'>{error.Message}</p>
+                  <p className='absolute right-2.5 -bottom-2 text-[0.9rem] text-white font-bold' id='message-error'>{mail.Message.length} / 10 Characters</p>
                   <textarea placeholder='Your Message' value={mail.Message} onChange={(e)=>(dispatchMail({type: "Message", payload: e.target.value }))}/>
                  </div>
                 <button type='submit' className='button'> Send </button>
