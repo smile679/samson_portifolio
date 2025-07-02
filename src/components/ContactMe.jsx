@@ -1,6 +1,6 @@
 import { useReducer } from 'react';
 import emailjs from '@emailjs/browser';
-import it from '../images/it.png'
+import It from '../images/It.png'
 
 const ContactMe = ()=>{
 
@@ -132,7 +132,7 @@ const ContactMe = ()=>{
               </form>
             </div>
           <div>
-           <img src={ it } alt="it man" className='w-full'/>
+           <img src={It} alt="it man" className='w-full'/>
         </div>
         </div>
         <div>
