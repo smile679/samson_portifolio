@@ -22,10 +22,10 @@ const Info = () =>{
         </div>
         <div className='flex flex-col-reverse'>
           <div className='relative my-5 sm:ml-20 flex'>
-            <button className='button mr-5 xs:mr-10' onClick={()=>{alert(`Sorry,
-The Project Under maintenance, To contact me, Use our Telegram, WhatsApp, Instagram Icons.. 
-
-ይቅሬታ እቲ ፕሮጀክት ኣብ ምስትኽኻል ይርከብ ንዝበለፀ ሓበሬታ ናይ ቴሌግራም፣ዋትሳፕ፣ኢንስታግራም ዘለዋ ምልክታት ተጠቒሞም ክትረኽቡና ትኽእሉ ኢኹም`)}}>
+            <button className='button mr-5 xs:mr-10' onClick={()=>{
+       const button = document.getElementById("contact-button");
+           button.scrollIntoView({behavior: "smooth"});
+        }}>
               Let's talk</button>
             <button className='button2' onClick={()=>{alert("Coming Soon")}}>Download CV</button>
           </div>
