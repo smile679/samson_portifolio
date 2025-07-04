@@ -1,8 +1,11 @@
-
+import Reveal from '../Animations/Reveal'
 const About = ()=>{
 
   return <section className="about" name="About">
+    <Reveal>
     <h1>About Me</h1>
+    </Reveal>
+    <Reveal>
       <p>
     I'm a passionate <span class="font-semibold text-amber-50">Frontend Developer</span> and 
     <span class="font-semibold text-amber-50"> Graphic Designer</span> with a strong background in 
@@ -13,7 +16,8 @@ const About = ()=>{
     with technical skills to craft engaging digital experiences. I'm always eager to learn new 
     frameworks, keep up with design trends, and bring fresh ideas to every project I work on.
   </p>
-
+    </Reveal>
+    <Reveal>
   <div className='lang-hobbies'>
           <div className='language'>
             <div className='lang'>
@@ -42,6 +46,7 @@ const About = ()=>{
           </ul>
           </div>
         </div>
+        </Reveal>
   </section>
 }
 

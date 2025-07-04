@@ -4,17 +4,31 @@ import tg from '../images/tg.png'
 import whatsapp from '../images/whatsapp.png'
 import instagram from '../images/instagram.png'
 import github from '../images/github.png'
+import RotatingText from '../Animations/RotatingText'
 
 const Info = () =>{
 
   return (
      <div className='info'>
         <div className='flex flex-col max-md-items-center md:pl-10'>
-           <h1 className='flex flex-col sm:flex-row text-shadow-white text-shadow-2xs'>
+            <h2 className='text-gray-200 text-xl font-bold'>Hello , I'm</h2>
+            <h1 className='flex flex-col sm:flex-row text-shadow-white text-shadow-2xs'>
             <span className="text-nowrap"> SAMSON GIDEY</span>
           </h1>
-         <h2 className='text-emerald-500 font-bold -tracking-tighter flex justify-items-center-safe'>
-          <span className='text-gray-400 mr-3'>I'M</span>FRONTEND DEV.
+          <h2 className='text-emerald-500 font-bold -tracking-tighter flex justify-items-center items-center'>
+          <RotatingText 
+            texts={['WEBSITE','FRONTEND']}
+            mainClassName=" text-white font-bold -tracking-tighter overflow-hidden rounded-lg flex items-center 
+             text-xl xs:text-2xl sm:text-3xl text-shadow-gray-800 text-shadow-lg px-2 bg-emerald-500 mr-2"
+            staggerFrom={"last"}
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-120%" }}
+            staggerDuration={0.025}
+            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            rotationInterval={5000}/>
+            DEVELOPER
           </h2>
         </div>
         <div className='text-center w-1/1'>
