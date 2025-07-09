@@ -1,4 +1,4 @@
-import { useAnimation, useInView, motion } from "framer-motion";
+import { useAnimation, useInView, motion, scale } from "framer-motion";
 import { useEffect, useRef } from "react"
 
 
@@ -7,8 +7,8 @@ export default function Reveal({ children }){
    const inView = useInView(ref, { once: "true", amount: 0.2 })
    const controls = useAnimation();
    const variants = {
-    hidden: {opacity: 0, y: 60},
-    visible: {opacity: 1, y: 0,
+    hidden: {opacity: 0, y: 70, scale: 0.8},
+    visible: {opacity: 1, y: 0, scale: 1,
       transition: {
         duration: 0.5,
         ease: "easeOut"

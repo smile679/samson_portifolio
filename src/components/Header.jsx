@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import  phone from "../images/phone.png"
+import Reveal from "../Animations/Reveal";
 
 const Header=()=>{
 const [showMenu, setShowMenu] = useState(false);
 
   return (
      <header className="wrapper">
-      <nav>
+        <nav>
         <h2>
         Portfolio<span className="animate-ping">..</span>
         </h2>
+      <Reveal>
         <ul>
           <li>
             <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Home' spy={true} smooth={true} duration={500} offset={-75}>
@@ -33,6 +35,7 @@ const [showMenu, setShowMenu] = useState(false);
             </Link>
             </li>
         </ul>
+        </Reveal>
         <div className="contact" type="button" onClick={()=>{
        const button = document.getElementById("contact-button");
            button.scrollIntoView({behavior: "smooth"});
