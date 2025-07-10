@@ -52,9 +52,6 @@
   p {
     @apply text-[20px] text-pretty;
   }
-  main {
-    @apply relative;
-  }
 
 }
 
@@ -91,7 +88,7 @@
   }
   }
   .home {
-    @apply max-w-6xl mx-auto flex flex-col items-center scroll-smooth xs:p-5 snap-none;
+    @apply relative max-w-6xl mx-auto flex flex-col items-center scroll-smooth xs:p-5 snap-none;
   }
   .hero {
     @apply w-full flex justify-between items-center flex-col-reverse md:flex-row max-xs:my-40 sm:my-30;
