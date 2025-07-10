@@ -1,13 +1,18 @@
-import Info from './Info';
-import Image from './Image'
-
+import Hero from "./Hero";
+import About from './About'
+import Services from './Services'
+import Skills from './Skills'
+import ContactMe from './ContactMe'
 
 const Home =()=> {
     
-  return <div className="home" name="Home">
-         <Info/>
-         <Image/>
-      </div>
+  return <section className="home">
+    <Hero/>
+    <About/>
+    <Services/>
+    <Skills/>
+    <ContactMe/>
+  </section>
 }
 
 export default Home; 

@@ -15,7 +15,7 @@ const [showMenu, setShowMenu] = useState(false);
       <Reveal>
         <ul>
           <li>
-            <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Home' spy={true} smooth={true} duration={500} offset={-75}>
+            <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Hero' spy={true} smooth={true} duration={500} offset={-75}>
               Home
              </Link>
           </li>
@@ -52,14 +52,14 @@ const [showMenu, setShowMenu] = useState(false);
         </h2>
         <button className="cursor-pointer bg-[#3EB489] p-1 rounded-md shadow-emerald-600/50 shadow-lg" onClick={()=>(setShowMenu(!showMenu))}>
           <svg class="w-10 h-10 text-gray-800 dark:text-white hover:text-[#3EB489]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-        </svg>
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+          </svg>
         </button>
 
         <ul className=" center  text-2xl font-extralight absolute top-18 -right-5 z-2 bg-[#0c0c0cdc] rounded-b-lg"
           style={{display: showMenu ? "flex" : "none"}}>
           <li className="nav-list">
-            <Link activeClass="text-[#45f8b7] font-bold bg-[#1c2020f8] border-b-2 " to='Home' spy={true} smooth={true} duration={500} offset={-70}
+            <Link activeClass="text-[#45f8b7] font-bold bg-[#1c2020f8] border-b-2 " to='Hero' spy={true} smooth={true} duration={500} offset={-70}
               onClick={()=>(setShowMenu(false))}>
               Home
              </Link>

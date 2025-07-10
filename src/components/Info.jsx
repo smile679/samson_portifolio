@@ -6,8 +6,14 @@ import instagram from '../images/instagram.png'
 import github from '../images/github.png'
 import RotatingText from '../Animations/RotatingText'
 import Reveal from '../Animations/Reveal'
+import { useNavigate } from 'react-router-dom'
 
 const Info = () =>{
+   const navigate = useNavigate();
+
+   function handleClick(){
+    navigate('/projects')
+   }
 
   return (
      <div className='info'>
@@ -47,9 +53,9 @@ const Info = () =>{
            button.scrollIntoView({behavior: "smooth"})}}>
               Let's talk
             </button>
-            <button className='button2' onClick={()=>{alert("Coming Soon")}}>
-              Download CV
-              </button>
+            <button className='button2' onClick={handleClick}>
+              My Projects
+            </button>
           </div>
       </Reveal>
       <Reveal>

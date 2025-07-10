@@ -6,7 +6,7 @@ const About = ()=>{
     <h1>About Me</h1>
     </Reveal>
     <Reveal>
-      <p>
+    <p>
     I'm a passionate <span class="font-semibold text-amber-50">Frontend Developer</span> and 
     <span class="font-semibold text-amber-50"> Graphic Designer</span> with a strong background in 
     <span class="font-medium text-amber-50"> HTML, CSS, JavaScript, React, Tailwindcss</span>, and the 
