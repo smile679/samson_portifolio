@@ -1,5 +1,5 @@
 import computer from '../images/computer.png'
-import manWithcompFront from '../images/manWithcompFront.png'
+import manInFront from '../images/manWithCompFront.png'
 import html33 from '../images/html33.png'
 import react from '../images/react.png'
 import tailwindcss from '../images/tailwindcss.png'
@@ -58,7 +58,7 @@ const Skills = ()=>{
         </div>
         <div className='comp-img flex flex-col justify-evenly max-md:my-10 '>
           <Reveal>
-          <img src={ manWithcompFront } alt="computer"/>
+          <img src={ manInFront } alt="computer"/>
           </Reveal>
           <img src={ computer } alt="computer" className='hidden md:flex'/>
         </div>
