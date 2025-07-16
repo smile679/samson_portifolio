@@ -1,5 +1,5 @@
 import computer from '../images/computer.png'
-import manInFront from '../images/manWithCompFront.png'
+import manInFront from '../images/manInFront.png'
 import html33 from '../images/html33.png'
 import react from '../images/react.png'
 import tailwindcss from '../images/tailwindcss.png'
