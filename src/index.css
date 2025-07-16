@@ -117,10 +117,10 @@
 }
 
   .lang-hobbies {
-    @apply w-full flex justify-evenly items-center mt-10 sm:mt-20;
+    @apply w-full flex justify-evenly items-center max-sm:flex-col mt-10 sm:mt-20 gap-2 sm:gap-5;
 
     & .language {
-      @apply flex flex-col justify-center items-center;
+      @apply w-full flex flex-col justify-center items-center py-7 xs:py-8 md:py-10 my-10 rounded-2xl shadow-inner shadow-dark-100;
     }
     & .lang {
       @apply flex justify-center items-center;
@@ -129,23 +129,23 @@
       @apply w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
     }
     & .lang h3 {
-      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
+      @apply text-gray-800 text-xl xs:text-2xl py-2 font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
     }
     & .language ul {
-      @apply list-disc pl-5 text-white text-xl space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2
+      @apply list-disc pl-5 text-white text-xl space-y-2 font-bold grid grid-cols-2 gap-x-15 mt-2
       text-shadow-emerald-800 text-shadow-lg;
     }
     & .hobbies {
-      @apply flex justify-center items-center;
+      @apply flex justify-center items-center ;
     }
     & .hobbies svg {
       @apply  w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse ;
     }
     & .hobbies h3 {
-      @apply text-gray-800 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
+      @apply text-gray-800 py-2 text-xl xs:text-2xl font-extrabold xs:-tracking-tighter text-shadow-emerald-800 text-shadow-lg;
     }
     &  ul {
-      @apply list-disc pl-5 text-xl text-white space-y-2 font-bold grid grid-cols-1 sm:grid-cols-2 gap-x-6 mt-2
+      @apply list-disc pl-5 text-xl text-white space-y-2 font-bold grid grid-cols-2 gap-x-15 mt-2
       text-shadow-emerald-800 text-shadow-lg;
     }
 
@@ -180,7 +180,7 @@
     @apply center w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 py-5 xs:py-10 px-5 sm:px-20 pb-10;
     /* bg-[url('./images/it-links.png')] bg-repeat bg-blend-soft-light; */
      & .skills-header {
-     @apply w-full flex justify-center items-center my-5 sm:my-10;
+     @apply w-full flex justify-center items-center my-10 sm:my-15;
     }
     & .skills-header svg {
       @apply w-10 h-10 sm:w-13 sm:h-13 inline-block mr-3 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse;
@@ -193,7 +193,7 @@
       @apply max-w-6xl grid grid-cols-1 md:grid-cols-2;
     }
     & .skills-grid .ul-grid {
-      @apply flex flex-col;
+      @apply flex flex-col justify-evenly gap-5;
     }
     & .skills-grid h2{
       @apply text-gray-800 font-extrabold py-2 text-shadow-emerald-800 text-shadow-lg;
@@ -203,7 +203,7 @@
       text-shadow-emerald-800 text-shadow-lg;
     }
     & .skills-grid .comp-img img {
-      @apply w-full drop-shadow-emerald-800 drop-shadow-lg;
+      @apply w-full drop-shadow-emerald-800 drop-shadow-lg ml-5 pr-5 md:p-5 lg:p-10;
     }
   }
   .contact-me {
@@ -233,7 +233,8 @@
       @apply w-full my-5;
     }
     & .contact-grid img {
-      @apply w-full object-cover drop-shadow-emerald-600 drop-shadow-lg hover:drop-shadow-emerald-500 hover:drop-shadow-2xl hover:scale-101;
+      @apply w-full object-cover drop-shadow-emerald-600 drop-shadow-lg hover:drop-shadow-emerald-500
+       hover:drop-shadow-2xl hover:scale-101;
     }
   }
   .project-card {
