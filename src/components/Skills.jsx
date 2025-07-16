@@ -62,7 +62,9 @@ const Skills = ()=>{
           <img src={ manInFront } alt="computer" className='hidden md:flex'/>
           </Reveal> 
           {/* <img src={ computer } alt="computer" className='hidden md:flex'/> */}
-          <img src={ manWithComp } alt="computer" className=''/>
+          <Reveal>
+            <img src={ manWithComp } alt="computer"/>
+          </Reveal>
         </div>
       </div>
     </section>
