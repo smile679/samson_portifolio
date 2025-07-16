@@ -203,8 +203,8 @@
       text-shadow-emerald-800 text-shadow-lg;
     }
     & .skills-grid .comp-img img {
-      @apply w-full drop-shadow-emerald-800 drop-shadow-lg  md:p-5 lg:p-10
-      drop-shadow-green-500 drop-shadow-2xl hover:drop-shadow-green-400 hover:drop-shadow-2xl transition-all duration-100 hover:scale-105;
+      @apply w-full md:p-5 lg:p-10
+      drop-shadow-green-400 drop-shadow-2xl hover:drop-shadow-green-500 hover:drop-shadow-2xl transition-all duration-100 hover:scale-105;
     }
   }
   .contact-me {
