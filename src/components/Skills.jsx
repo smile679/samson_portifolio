@@ -1,5 +1,6 @@
-import computer from '../images/computer.png'
+// import computer from '../images/computer.png'
 import manInFront from '../images/manInFront.png'
+import manWithComp from '../images/manWithComp.png'
 import html33 from '../images/html33.png'
 import react from '../images/react.png'
 import tailwindcss from '../images/tailwindcss.png'
@@ -56,11 +57,12 @@ const Skills = ()=>{
           </div>
           </Reveal>
         </div>
-        <div className='comp-img flex flex-col justify-evenly max-md:my-10 '>
+        <div className='comp-img w-full flex flex-col justify-evenly max-md:my-10 '>
           <Reveal>
-          <img src={ manInFront } alt="computer"/>
-          </Reveal>
-          <img src={ computer } alt="computer" className='hidden md:flex'/>
+          <img src={ manInFront } alt="computer" className='hidden md:flex'/>
+          </Reveal> 
+          {/* <img src={ computer } alt="computer" className='hidden md:flex'/> */}
+          <img src={ manWithComp } alt="computer" className=''/>
         </div>
       </div>
     </section>
