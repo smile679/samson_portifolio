@@ -1,12 +1,56 @@
-# React + Vite
+Samson Gidey’s Portfolio
+Welcome to my personal portfolio website! This project showcases my web development skills, design sensibility, and a selection of projects I’ve built using modern web technologies.
+________________________________________
+Table of Contents
+•	Demo
+•	Features
+•	Technologies
+•	Project Structure
+•	Contact
+________________________________________
+##Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[👉 View Live](samsongideyportifolio.netlify.app/)
+________________________________________
+Features
+•	Responsive Design — Mobile-first layout with Tailwind CSS breakpoints.
+•	Smooth Animations — Page transitions and interactions powered by Framer Motion.
+•	Multi-Section Layout — Sections for Home, About, Skills, Projects, and Contact.
+•	Project Showcase — Detailed cards with images, descriptions, and links to live demos and GitHub repositories.
+•	Contact Form — EmailJS integration for sending messages directly from the site.
+•	Smooth Scroll — Navigation links scroll smoothly to their corresponding sections.
+________________________________________
+Technologies
+•	React (v19.1.0) — UI library for building declarative components.
+•	Vite (v7.0.0) — Fast development server and build tool.
+•	Tailwind CSS (v4.1.11) — Utility-first CSS framework for styling.
+•	Framer Motion (v12.23.0) — Animation library for React.
+•	EmailJS (v4.4.1) — Client-side email sending service.
+•	React Router (v7.6.3) — Declarative routing for React.
+•	React Scroll (v1.9.3) — Smooth scrolling to anchors.
+________________________________________
 
-Currently, two official plugins are available:
+Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+samson_portifolio/
+├── public/            # Static assets and index.html
+├── src/               # Application source code
+│   ├── components/    # Reusable UI components (Header, Footer, Card, etc.)
+│   ├── images/        # Project and portfolio images
+│   ├── styles/        # Global CSS and Tailwind configuration
+│   ├── App.jsx        # Root component and routes
+│   └── main.jsx       # Entry point
+├── .env               # Environment variables (e.g., EmailJS keys)
+├── package.json       # Project metadata and dependencies
+├── vite.config.js     # Vite configuration
+└── README.md          # This file
+________________________________________
 
-## Expanding the ESLint configuration
+Contact
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Feel free to reach out if you have any questions or feedback!
+•	Email: samsongidey9@gmail.com
+•	GitHub: @smile679
+________________________________________
+© 2025 Samson Gidey. All rights reserved.

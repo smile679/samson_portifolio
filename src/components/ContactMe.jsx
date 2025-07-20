@@ -145,7 +145,7 @@ const ContactMe = ()=>{
         </div>
         </div>
         <div>
-          <p className='text-white text-sm pt-20 pb-2'>Samson.G-Portfolio V 1.1</p>
+          <p className='text-white text-sm pt-20 pb-2'>© 2025 Samson Gidey. All rights reserved.</p>
         </div>
     </section>
   )
