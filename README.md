@@ -1,6 +1,7 @@
 Samson Gidey’s Portfolio
 Welcome to my personal portfolio website! This project showcases my web development skills, design sensibility, and a selection of projects I’ve built using modern web technologies.
 ________________________________________
+```
 Table of Contents
 •	Demo
 •	Features
@@ -28,10 +29,10 @@ Technologies
 •	EmailJS (v4.4.1) — Client-side email sending service.
 •	React Router (v7.6.3) — Declarative routing for React.
 •	React Scroll (v1.9.3) — Smooth scrolling to anchors.
+```
 ________________________________________
 
 Project Structure
-
 ```bash
 samson_portifolio/
 ├── public/            # Static assets and index.html
