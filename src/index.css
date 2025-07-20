@@ -240,20 +240,22 @@
     }
   }
   .project-card {
-    @apply w-full md:h-52 grid grid-cols-1 sm:grid-cols-[200px_1fr] md:grid-cols-[270px_1fr] p-3 my-10 
-    shadow-inner shadow-green-100 rounded-2xl backdrop-blur-lg bg-[#107a72] hover:bg-[#0f766e]
+    @apply flex flex-col items-center p-3 my-10 shadow-inner shadow-green-100 rounded-2xl backdrop-blur-lg bg-[#107a72] hover:bg-[#0f766e]
     transition-all duration-300;
+    & .project-grid {
+      @apply w-full grid grid-cols-1 md:grid-cols-[270px_1fr];
+    }
+    &  h3 {
+      @apply text-emerald-500 text-shadow-emerald-800 text-shadow-lg max-md:my-2;
+    }
     & img {
       @apply w-full rounded-2xl max-sm:object-contain drop-shadow-gray-800 drop-shadow-lg;
     }
     & .project-info {
-      @apply flex flex-col justify-between text-center pl-3;
-    }
-    & .project-info h3 {
-      @apply text-emerald-500 text-shadow-emerald-800 text-shadow-lg max-md:my-2;
+      @apply flex flex-col justify-between pl-3 md:pl-5;
     }
     & .project-buttons {
-      @apply w-full flex flex-col xs:flex-row justify-center items-center max-md:mb-5;
+      @apply w-full flex max-xs:flex-col justify-center items-center max-md:mb-5;
     }
 }
 }
@@ -277,7 +279,7 @@
      hover:scale-105;
   }
   @utility button3 {
-     @apply bg-gray-900 text-gray-200 font-bold text-nowrap max-sm:px-3 py-2 md:py-2 xs:ml-3 lg:px-8 rounded-lg 
+     @apply bg-gray-900 text-gray-200 font-bold text-nowrap max-lg:px-3 py-2 md:py-2 xs:ml-3 lg:px-8 rounded-lg 
      transition-all duration-300 cursor-pointer hover:bg-gray-800 hover:text-white shadow-gray-800/50 shadow-lg
      hover:ring-0 hover:scale-105;
   }
