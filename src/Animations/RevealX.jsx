@@ -2,15 +2,15 @@ import { useAnimation, useInView, motion, scale } from "framer-motion";
 import { useEffect, useRef } from "react"
 
 
- const Reveal= ({ children }) =>{
-   const ref =useRef(null);
+ const RevealX = ({ children }) => {
+   const ref = useRef(null);
    const inView = useInView(ref, { once: "true", amount: 0.2 })
    const controls = useAnimation();
    const variants = {
-    hidden: {opacity: 0, y: 70, scale: 0.8},
-    visible: {opacity: 1, y: 0, scale: 1,
+    hidden: {opacity: 0, x: -200,},
+    visible: {opacity: 1, x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.6,
         ease: "easeOut"
       }
     }
@@ -27,6 +27,7 @@ import { useEffect, useRef } from "react"
      initial= "hidden"
      variants= { variants }
      animate= { controls }
+    // className="overflow-x-hidden"
     >
      { children }
     </motion.div>
@@ -34,4 +35,4 @@ import { useEffect, useRef } from "react"
 
 }
 
-export default Reveal;
+export default RevealX;

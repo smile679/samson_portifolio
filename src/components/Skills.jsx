@@ -1,4 +1,3 @@
-// import computer from '../images/computer.png'
 import manInFront from '../images/manInFront.png'
 import manWithComp from '../images/manWithComp.png'
 import html33 from '../images/html33.png'
@@ -8,6 +7,7 @@ import Ps from '../images/Ps.png'
 import Ai from '../images/Ai.png'
 import Pr from '../images/Pr.png'
 import Reveal from '../Animations/Reveal'
+import RevealX from '../Animations/RevealX'
 
 const Skills = ()=>{
 
@@ -24,7 +24,7 @@ const Skills = ()=>{
       <div className="skills-grid">
         <div className="ul-grid">
           <Reveal>
-        <div className='py-2 xs:pb-5 mb-10 p-5 sm:pl-8 rounded-lg shadow-inner shadow-dark-100'>
+        <div className='py-2 xs:pb-5 mb-10 p-5 sm:pl-8 rounded-lg shadow-inner shadow-dark-100 overflow-x-hidden'>
           <h2>Tech Skills:</h2>
           <ul>
             <li>HTML5</li>
@@ -42,7 +42,7 @@ const Skills = ()=>{
         </div>
           </Reveal>
           <Reveal>
-          <div className='py-5 px-5 md:pb-5 rounded-lg shadow-inner shadow-dark-100 box-border'>
+          <div className='py-5 px-5 md:pb-5 rounded-lg shadow-inner shadow-dark-100 box-border overflow-x-hidden'>
             <h2>Design Skills:</h2>
             <ul className='flex flex-col'>
               <li>Photoshop</li>
@@ -58,13 +58,12 @@ const Skills = ()=>{
           </Reveal>
         </div>
         <div className='comp-img w-full flex flex-col justify-evenly max-md:my-10 '>
-          <Reveal>
-          <img src={ manInFront } alt="computer" className='hidden md:flex'/>
-          </Reveal> 
-          {/* <img src={ computer } alt="computer" className='hidden md:flex'/> */}
-          <Reveal>
+          <RevealX>
+            <img src={ manInFront } alt="computer" className='hidden md:flex'/>
+          </RevealX>
+          <RevealX>
             <img src={ manWithComp } alt="computer"/>
-          </Reveal>
+          </RevealX>
         </div>
       </div>
     </section>

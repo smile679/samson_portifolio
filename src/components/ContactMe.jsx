@@ -2,6 +2,7 @@ import { useReducer } from 'react';
 import emailjs from '@emailjs/browser';
 import It from '../images/It.png'
 import Reveal from '../Animations/Reveal';
+import RevealX from '../Animations/RevealX';
 
 const ContactMe = ()=>{
 
@@ -138,9 +139,9 @@ const ContactMe = ()=>{
             </div>
             </Reveal>
           <div>
-            <Reveal>
-           <img src={It} alt="it man" className='w-full'/>
-           </Reveal>
+            <RevealX>
+              <img src={It} alt="it man" className='w-full'/>
+           </RevealX>
         </div>
         </div>
         <div>

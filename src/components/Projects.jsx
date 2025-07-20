@@ -1,10 +1,10 @@
-import portfolio from '../images/projectImages/portfolio.jpg'
-import movieScope from '../images/projectImages/movieScope.jpg'
-import foodie from '../images/projectImages/foodie.jpg'
+import portfolio from '../images/projectImages/portfolio.webp'
+import movieScope from '../images/projectImages/movieScope.webp'
+import foodiehome2 from '../images/projectImages/foodiehome2.webp'
 
 const Projects = ()=>{
 
-  return <section className='max-w-6xl mx-auto min-h-screen flex flex-col py-20 px-5 text-center' id='projectId'>
+  return <section className='max-w-6xl mx-auto min-h-screen flex flex-col py-10 px-5 text-center' id='projectId'>
     <h1 className='my-5 text-shadow-gray-800 text-shadow-lg'>Projects</h1>
     <div className='project-card'>
       <img src={portfolio} alt="portfolio image"/>
@@ -66,7 +66,7 @@ const Projects = ()=>{
     </div>
 
     <div className='project-card'>
-      <img src={ foodie } alt="Foodie Delight image"/>
+      <img src={ foodiehome2 } alt="Foodie Delight image"/>
       <div className='project-info'>
         <h3>Foodie Delight App</h3>
           <p className='text-[13px] leading-5 text-white text-pretty'>MovieScope is a modern and responsive web application that allows users to browse, search, 
