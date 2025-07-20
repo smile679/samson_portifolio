@@ -8,11 +8,13 @@ Table of Contents
 •	Technologies
 •	Project Structure
 •	Contact
+```
 ________________________________________
 ##Demo
 
 [👉 View Live](samsongideyportifolio.netlify.app/)
 ________________________________________
+```
 Features
 •	Responsive Design — Mobile-first layout with Tailwind CSS breakpoints.
 •	Smooth Animations — Page transitions and interactions powered by Framer Motion.
