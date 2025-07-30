@@ -23,9 +23,9 @@ const Info = () =>{
             <h1 className='flex flex-col sm:flex-row text-shadow-white text-shadow-2xs'>
             <span className="text-nowrap"> SAMSON GIDEY</span>
           </h1>
-          <h2 className='text-emerald-500 font-bold -tracking-tighter flex justify-items-center items-center'>
+          <h2 className='text-emerald-500 font-extrabold -tracking-tighter flex justify-items-center items-center'>
           <RotatingText 
-            texts={['WEBSITE','FRONTEND']}
+            texts={['WEBSITE','FULLSTACK']}
             mainClassName=" text-white font-bold -tracking-tighter overflow-hidden rounded-lg flex items-center 
              text-xl xs:text-2xl sm:text-3xl text-shadow-gray-800 text-shadow-lg px-2 bg-emerald-500 mr-2"
             staggerFrom={"last"}
