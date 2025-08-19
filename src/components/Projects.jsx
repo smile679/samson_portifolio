@@ -3,6 +3,7 @@ import movieScope from '../images/projectImages/movieScope.webp'
 import movieScope2 from '../images/projectImages/movieScope2.jpg'
 import foodiehome2 from '../images/projectImages/foodiehome2.webp'
 import foodie2 from '../images/projectImages/foodie2.webp'
+import form from '../images/projectImages/form.jpeg'
 import { useState, useEffect } from 'react'
 
 const Projects = ()=>{
@@ -135,6 +136,46 @@ const Projects = ()=>{
           </a>
           <a
             href="https://github.com/smile679/Foodie-Delight.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <button className="button3">
+            Code on Github</button>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div className='project-card'>
+      <h3>Form Backend Only</h3>
+      <div className='project-grid'>
+        <div className='flex flex-col justify-evenly space-y-3'>
+        <img src={ form } alt="Form"/>
+        {/* <img src={ foodie2 } alt="Foodie Delight image"/> */}
+      </div>
+      <div className='project-info'>
+          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>This is a Node.js + Express backend project for handling user registration, authentication, and image uploads.
+            The system supports User and Admin roles. Built with
+            <span className='text-amber-400 font-bold'> NodeJS(expressJs)</span>, 
+            <span className='text-gray-800 font-bold'> MongoDB with Mongoose </span>,
+            <span className='text-amber-400 font-bold'> dotenv for environment variables </span>
+            <span className='text-sky-400 font-bold'> , Multer (file uploads) </span>
+            <span className='text-gray-800 font-bold'> , JWT (JSON Web Tokens) for authentication. </span> it provides a secure and user-friendly experience.
+          </p>
+          <div className='flex flex-col items-start my-2'>
+            <div className='w-full flex justify-between'>
+              <h3>🔒 User Roles</h3>
+              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
+            </div>
+              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2 ml-5 list-disc'>
+                <li>Users can register, log in, change their password, and view uploaded images.</li>
+                <li>Admins can do everything a User can, plus upload and delete images.</li>
+              </ul> : ""}
+          </div>
+          <div className='project-buttons'>
+          <a
+            href="https://github.com/smile679/Form-backend-only.git"
             target="_blank"
             rel="noopener noreferrer"
           >
