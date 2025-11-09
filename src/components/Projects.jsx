@@ -3,6 +3,8 @@ import movieScope from '../images/projectImages/movieScope.webp'
 import movieScope2 from '../images/projectImages/movieScope2.jpg'
 import foodiehome2 from '../images/projectImages/foodiehome2.webp'
 import foodie2 from '../images/projectImages/foodie2.webp'
+import bakery_front from '../images/projectImages/bakery_front.jpg'
+import bakery_listing from '../images/projectImages/bakery_listing.jpg'
 import form from '../images/projectImages/form.jpeg'
 import { useState, useEffect } from 'react'
 
@@ -176,6 +178,58 @@ const Projects = ()=>{
           <div className='project-buttons'>
           <a
             href="https://github.com/smile679/Form-backend-only.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <button className="button3">
+            Code on Github</button>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div className='project-card'>
+      <h3>Bakery Fullstack app</h3>
+      <div className='project-grid'>
+        <div className='flex flex-col justify-evenly space-y-3'>
+        <img src={ bakery_front } alt="Bakery Front image"/>
+        <img src={ bakery_listing } alt="Bakery Listing image"/>
+      </div>
+      <div className='project-info'>
+          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>Bakery Fullstack app is a modern, responsive web application that helps users discover and now order delicious baked goods from around the world. Whether you're in the mood for bread, pastries,
+             or something brand new, Bakery Fullstack app lets you search, explore, and order with ease. Build with
+            <span className='text-amber-400 font-bold'> JavaScript</span>,
+            <span className='text-gray-800 font-bold'> React </span>, and the latest
+            <span className='text-sky-400 font-bold'> Tailwind CSS v4. </span>
+            <span className='text-gray-800 font-bold'> and React Router </span> it provides a clean and interactive user experience.
+          </p>
+          <div className='flex flex-col items-start my-2'>
+            <div className='w-full flex justify-between'> 
+              <h3>🔥 Features</h3>
+              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
+            </div>
+              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+                <li>🔍 Search any bakery by name</li>
+                <li>🖼️ Clean and responsive bakery card layout</li>
+                <li>📄 Detailed bakery pages with ingredients and instructions</li>
+                <li>🛒 Add to cart functionality</li>
+                <li>🧾 Cart summary and order receipt</li>
+                <li>💳 Order and payment simulation (demo)</li>
+                <li>🌐 Built with React, Tailwind CSS, and React Router</li>
+                <li>📱 Fully responsive design for both desktop and mobile devices</li>
+              </ul> : ""}
+          </div>
+          <div className='project-buttons'>
+            <a
+            href="https://bakery-full-stack-webisite-front.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button px-2 py-2 max-sm:my-3"> Visit Live Website</button>
+          </a>
+          <a
+            href="https://github.com/smile679/Bakery-Full-stack-Webisite.git"
             target="_blank"
             rel="noopener noreferrer"
           >
