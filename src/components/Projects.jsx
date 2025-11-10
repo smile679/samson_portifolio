@@ -3,8 +3,8 @@ import movieScope from '../images/projectImages/movieScope.webp'
 import movieScope2 from '../images/projectImages/movieScope2.jpg'
 import foodiehome2 from '../images/projectImages/foodiehome2.webp'
 import foodie2 from '../images/projectImages/foodie2.webp'
-import bakery_front from '../images/projectImages/bakery_front.jpg'
-import bakery_listing from '../images/projectImages/bakery_listing.jpg'
+import bakeryFront from '../images/projectImages/bakery_front.jpg'
+import bakeryListing from '../images/projectImages/bakery_listing.jpg'
 import form from '../images/projectImages/form.jpeg'
 import { useState, useEffect } from 'react'
 
@@ -193,8 +193,8 @@ const Projects = ()=>{
       <h3>Bakery Fullstack app</h3>
       <div className='project-grid'>
         <div className='flex flex-col justify-evenly space-y-3'>
-        <img src={ bakery_front } alt="Bakery Front image"/>
-        <img src={ bakery_listing } alt="Bakery Listing image"/>
+        <img src={ bakeryFront } alt="Bakery Front image"/>
+        <img src={ bakeryListing } alt="Bakery Listing image"/>
       </div>
       <div className='project-info'>
           <p className='text-[1rem] leading-6 text-white text-pretty my-1'>Bakery Fullstack app is a modern, responsive web application that helps users discover and now order delicious baked goods from around the world. Whether you're in the mood for bread, pastries,
