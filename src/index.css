@@ -107,7 +107,7 @@
   }
 
   .about {
-    @apply w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 text-center py-30 sm:py-40 px-4;
+    @apply relative w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 text-center py-30 sm:py-40 px-4;
 
     & h1 {
       @apply  text-gray-800 text-shadow-emerald-800 text-shadow-lg;
@@ -137,7 +137,7 @@
       text-shadow-emerald-800 text-shadow-lg;
     }
     & .hobbies {
-      @apply flex justify-center items-center ;
+      @apply flex justify-center items-center;
     }
     & .hobbies svg {
       @apply  w-8 sm:mr-1 inline-block sm:ml-4 text-gray-800 hover:hover:-translate-y-0.5 animate-pulse ;
@@ -166,7 +166,7 @@
       @apply font-bold  text-shadow-gray-800 text-shadow-lg;
      }
     & .service-list {
-      @apply w-full grid grid-cols-1 md:grid-cols-2 gap-5 text-pretty md:px-10 max-xs:pl-3;
+      @apply w-full grid grid-cols-1 md:grid-cols-2 gap-5 text-pretty sm:px-5 md:px-10 max-xs:pl-3;
   }
     & .service-list h3 {
       @apply text-[#3EB489] text-2xl xs:text-3xl mb-2.5 py-5 max-xs:-ml-2
@@ -178,7 +178,7 @@
   }
 
   .skills {
-    @apply center w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 py-5 xs:py-10 px-5 sm:px-20 pb-10;
+    @apply relative center w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 py-5 xs:py-10 px-5 sm:px-20 pb-10;
     
      & .skills-header {
      @apply w-full flex justify-center items-center my-10 sm:my-15;

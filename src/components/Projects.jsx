@@ -193,8 +193,8 @@ const Projects = ()=>{
       <h3>Bakery Fullstack app</h3>
       <div className='project-grid'>
         <div className='flex flex-col justify-evenly space-y-3'>
-        <img src={ bakeryFront } alt="Bakery Front image"/>
-        <img src={ bakeryListing } alt="Bakery Listing image"/>
+        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763417061/bakerFront_xvptpc.jpg" alt="Bakery Front image"/>
+        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763417091/bakerSecond_owhgcg.jpg" alt="Bakery Listing image"/>
       </div>
       <div className='project-info'>
           <p className='text-[1rem] leading-6 text-white text-pretty my-1'>Bakery Fullstack app is a modern, responsive web application that helps users discover and now order delicious baked goods from around the world. Whether you're in the mood for bread, pastries,
@@ -210,7 +210,6 @@ const Projects = ()=>{
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
             </div>
               { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
-                <li>🔍 Search any bakery by name</li>
                 <li>🖼️ Clean and responsive bakery card layout</li>
                 <li>📄 Detailed bakery pages with ingredients and instructions</li>
                 <li>🛒 Add to cart functionality</li>
