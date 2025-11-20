@@ -239,6 +239,65 @@ const Projects = ()=>{
       </div>
       </div>
     </div>
+
+    <div className='project-card'>
+      <h3>Bakery Fullstack app</h3>
+      <div className='project-grid'>
+        <div className='flex flex-col justify-evenly space-y-3'>
+        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn3_yz6lwo.jpg" alt="Bakery Front image"/>
+        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn2_apgwdx.jpg" alt="Bakery Listing image"/>
+      </div>
+      <div className='project-info'>
+          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>
+            eCommerce App is a full-featured, responsive online shopping platform built to provide users with a smooth and secure buying experience.
+            From browsing products and managing carts to completing secure PayPal payments, the app delivers a complete modern shopping flow.
+            Powered by 
+            <span className='text-yellow-400 font-bold'> JavaScript </span>, 
+            <span className='text-blue-400 font-bold'> React </span>, 
+            <span className='text-sky-400 font-bold'> Tailwind CSS v4 </span>, 
+            <span className='text-purple-400 font-bold'> Redux Toolkit </span>, and 
+            <span className='text-green-400 font-bold'> Node.js & Express </span>, 
+            it ensures fast performance and real-time updates.
+            Integrated with 
+            <span className='text-indigo-400 font-bold'> MongoDB </span> and 
+            <span className='text-emerald-400 font-bold'> PayPal Payments </span>, 
+            the platform offers secure authentication, admin management, and a seamless user experience from start to finish.
+          </p>
+          <div className='flex flex-col items-start my-2'>
+            <div className='w-full flex justify-between'> 
+              <h3>🔥 Features</h3>
+              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
+            </div>
+              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+                <li>🖼️ Clean and responsive bakery card layout</li>
+                <li>📄 Detailed bakery pages with ingredients and instructions</li>
+                <li>🛒 Add to cart functionality</li>
+                <li>🧾 Cart summary and order receipt</li>
+                <li>💳 Order and payment simulation (demo)</li>
+                <li>🌐 Built with React, Tailwind CSS, and React Router</li>
+                <li>📱 Fully responsive design for both desktop and mobile devices</li>
+              </ul> : ""}
+          </div>
+          <div className='project-buttons'>
+            <a
+            href="https://ecommerce-app-1-q5og.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button px-2 py-2 max-sm:my-3"> Visit Live Website</button>
+          </a>
+          <a
+            href="https://github.com/smile679/eCommerce-app.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <button className="button3">
+            Code on Github</button>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
   </section>
 }
 
