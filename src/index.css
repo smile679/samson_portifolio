@@ -107,21 +107,21 @@
   }
 
   .about {
-    @apply relative w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50 text-center py-30 sm:py-40 px-4;
+    @apply relative w-screen bg-emerald-600 shadow-lg shadow-emerald-500/50  py-15;
 
     & h1 {
       @apply  text-gray-800 text-shadow-emerald-800 text-shadow-lg;
     }
     & p {
-      @apply  max-w-3xl sm:max-w-5xl  mx-auto text-lg text-gray-900 text-shadow-lg leading-relaxed my-5
+      @apply text-lg text-gray-900 text-shadow-lg leading-relaxed py-2
   }
 }
-
+/* 
   .lang-hobbies {
-    @apply w-full flex justify-evenly items-center max-sm:flex-col mt-10 sm:mt-20 gap-2 sm:gap-5;
+    @apply w-full flex flex-col justify-evenly items-center max-sm:flex-col gap-2 sm:gap-5;
 
     & .language {
-      @apply w-full flex flex-col justify-center items-center py-7 xs:py-8 md:py-10 my-10 rounded-2xl shadow-inner shadow-dark-100;
+      @apply w-full flex flex-col justify-center items-center py-7 my-5 rounded-2xl shadow-inner shadow-dark-100;
     }
     & .lang {
       @apply flex justify-center items-center;
@@ -148,9 +148,9 @@
     &  ul {
       @apply list-disc pl-5 text-xl text-white space-y-2 font-bold grid grid-cols-2 gap-x-15 mt-2
       text-shadow-emerald-800 text-shadow-lg;
-    }
+    } */
 
-  }
+  /* } */
 
   .services {
     @apply w-full center py-20;

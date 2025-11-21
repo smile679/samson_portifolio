@@ -9,7 +9,8 @@ import form from '../images/projectImages/form.jpeg'
 import { useState, useEffect } from 'react'
 
 const Projects = ()=>{
-  const [showText, setShowText] = useState({movie: false, foodie: false})
+  // const [showText, setShowText] = useState({movie: false, foodie: false})
+  const [showText, setShowText] = useState(false)
 
   useEffect(() => {
   const isMobile = window.innerWidth < 640;
@@ -30,12 +31,12 @@ const Projects = ()=>{
               It includes a clean Home page, an About section, a detailed Skills section, and a fully functional Contact form.
             </p>
           <div className='project-buttons'>
-              <a
+            <a
               href="https://samsongideyportifolio.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="button px-2 py-2 my-2 max-sm:my-3"> Visit Live Website</button>
+            <button className="button px-2 py-2 my-2 max-sm:my-3"> Visit Live Website</button>
             </a>
             <a
               href="https://github.com/smile679/samson_portifolio.git"
@@ -69,7 +70,7 @@ const Projects = ()=>{
               <h3>🔥 Features</h3>
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, movie:!prev.movie}))}>{showText.movie ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText.movie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🔍 Search movies by title</li>
                 <li>🎞️ Browse trending and popular movies</li>
                 <li>🧾 View detailed movie info: title, rating, description, poster, and more</li>
@@ -117,7 +118,7 @@ const Projects = ()=>{
               <h3>🔥 Features</h3>
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🔍 Search any recipe by name</li>
                 <li>🖼️ Clean and responsive recipe card layout</li>
                 <li>📄 Detailed recipe pages with ingredients and instructions</li>
@@ -209,7 +210,7 @@ const Projects = ()=>{
               <h3>🔥 Features</h3>
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🖼️ Clean and responsive bakery card layout</li>
                 <li>📄 Detailed bakery pages with ingredients and instructions</li>
                 <li>🛒 Add to cart functionality</li>
@@ -269,12 +270,12 @@ const Projects = ()=>{
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
             </div>
               { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
-                <li>🖼️ Clean and responsive bakery card layout</li>
-                <li>📄 Detailed bakery pages with ingredients and instructions</li>
+                <li>🖼️ Clean and responsive ecommerce card layout</li>
+                <li>📄 Detailed pages with ingredients and instructions</li>
                 <li>🛒 Add to cart functionality</li>
                 <li>🧾 Cart summary and order receipt</li>
                 <li>💳 Order and payment simulation (demo)</li>
-                <li>🌐 Built with React, Tailwind CSS, and React Router</li>
+                <li>🌐 Built with React, Tailwind CSS, and React Router, nodeJS, expressJs, Mongoose</li>
                 <li>📱 Fully responsive design for both desktop and mobile devices</li>
               </ul> : ""}
           </div>
