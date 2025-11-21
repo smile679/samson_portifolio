@@ -33,10 +33,10 @@ const About = () => {
       <Reveal>
         <h1>About Me</h1>
       </Reveal>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-10 gap-5">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 md:mt-10 gap-5">
         <Reveal>
           <div className="w-full flex justify-center items-center">
-            <p className="text-center">
+            <p className="text-center pt-10">
                 I'm a passionate <span className="font-semibold text-amber-50">  Full-Stack Developer </span> and Graphic Designer with a
               strong foundation in <span class="font-semibold text-amber-50">HTML, CSS, JavaScript, React, Tailwind CSS,
               Node.js, Express, and MongoDB </span>. I specialize in building responsive,
@@ -56,7 +56,7 @@ const About = () => {
             {
               aboutSkills && aboutSkills.map(skill=>(
                 <div className="max-w-lg m-auto flex justify-between items-center shadow-inner shadow-dark-100 rounded-lg p-2">
-                  <div className="w-13 h-13 flex justify-center items-center rounded-lg">
+                  <div className="w-13 h-13 flex justify-center items-center rounded-lg shadow-inner shadow-dark-100 px-2">
                     {skill.icon}
                   </div>
                   <div className="flex flex-col items-start ml-5">
