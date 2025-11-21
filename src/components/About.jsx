@@ -52,7 +52,7 @@ const About = () => {
           </div>
         </Reveal>
         <Reveal>
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-4">
             {
               aboutSkills && aboutSkills.map(skill=>(
                 <div className="max-w-lg m-auto flex justify-between items-center shadow-inner shadow-dark-100 rounded-lg p-2">
