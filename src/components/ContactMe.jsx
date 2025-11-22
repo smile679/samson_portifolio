@@ -1,6 +1,5 @@
 import { useReducer } from "react";
 import emailjs from "@emailjs/browser";
-import It from "../images/It.png";
 import Reveal from "../Animations/Reveal";
 import RevealX from "../Animations/RevealX";
 

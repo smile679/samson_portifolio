@@ -1,5 +1,3 @@
-import manInFront from '../images/manInFront.png'
-import manWithComp from '../images/manWithComp.png'
 import html33 from '../images/html33.png'
 import react from '../images/react.png'
 import tailwindcss from '../images/tailwindcss.png'
@@ -91,12 +89,6 @@ const Skills = ()=>{
                 </div>
               </div>
             </div>
-              {/* <ul className='grid grid-cols-1 sm:grid-cols-2'>
-                <li>Photoshop</li>
-                <li>A. Illustrator</li>
-                <li className="text-nowrap">A. Primere Pro</li>
-                <li className="text-nowrap">Figma</li>
-              </ul> */}
             <div className='grid grid-cols-3 py-5 md:gap-x-2 max-xs:-ml-2'>
               <img src={ Ps } alt="Pr icon" className=" drop-shadow-cyan-500 drop-shadow-lg"/>
               <img src={ Ai } alt="Ai icon" className=" drop-shadow-amber-500 drop-shadow-lg"/>

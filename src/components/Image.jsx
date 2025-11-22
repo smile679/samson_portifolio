@@ -1,6 +1,4 @@
-import Reveal from '../Animations/Reveal'
 import RevealX from '../Animations/RevealX'
-import  smile from '../images/smile.webp'
 
 const Image=()=>{
   return(
