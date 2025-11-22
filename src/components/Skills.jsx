@@ -6,7 +6,7 @@ import Ai from '../images/Ai.png'
 import Pr from '../images/Pr.png'
 import Reveal from '../Animations/Reveal'
 import RevealX from '../Animations/RevealX'
-import ProjectOverView from './projectOverview'
+import ProjectOverView from './projectOverView'
 
 const Skills = ()=>{
 
