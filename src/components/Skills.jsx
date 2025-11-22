@@ -27,9 +27,36 @@ const Skills = ()=>{
       <div className="skills-grid">
         <div className="ul-grid">
           <Reveal>
-        <div className='py-2 xs:pb-5 mb-10 p-5 sm:pl-8 rounded-lg shadow-inner shadow-dark-100 overflow-x-hidden'>
+        <div className='py-2 p-5 rounded-lg overflow-x-hidden'>
           <h2>Tech Skills:</h2>
-          <ul>
+          {/* <div className='flex flex-col gap-5'> */}
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- Html, CSS</p>
+              <div className='w-full max-w-75 h-2 rounded-md shadow-inner shadow-dark-100'>
+                <div className='w-12/13 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-md'>- Javascript</p>
+              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                <div className='w-5/6 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- NodeJs, Express</p>
+              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                <div className='w-5/6 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- MongoDb</p>
+              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                <div className='w-7/8 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+          </div>
+          {/* <ul>
             <li>HTML/CSS</li>
             <li>Tailwind</li>
             <li>Javascript</li>
@@ -38,7 +65,7 @@ const Skills = ()=>{
             <li>NodeJs</li>
             <li>ExpressJs</li>
             <li>RestAPI</li>
-          </ul>
+          </ul> */}
         <div className='flex justify-evenly md:justify-center lg:justify-evenly py-5 max-xs:-ml-2'>
           <img src={ html33 } alt="html icon" className="w-30 xs:w-60 md:w-40 lg:w-60 drop-shadow-green-800 drop-shadow-sm object-cover"/>
           <img src={ react } alt="react icon" className="w-10 xs:w-20 md:w-15 lg:w-20 drop-shadow-sky-500 drop-shadow-sm object-cover"/>
@@ -47,14 +74,40 @@ const Skills = ()=>{
         </div>
           </Reveal>
           <Reveal>
-          <div className='py-5 px-5 md:pb-5 rounded-lg shadow-inner shadow-dark-100 box-border overflow-x-hidden'>
+          <div className='py-5 px-5 rounded-lg box-border overflow-x-hidden'>
             <h2>Design Skills:</h2>
-            <ul className='grid grid-cols-1 sm:grid-cols-2'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- Html, CSS</p>
+              <div className='w-full max-w-75 h-2 rounded-md shadow-inner shadow-dark-100'>
+                <div className='w-12/13 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-md'>- Javascript</p>
+              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                <div className='w-5/6 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- NodeJs, Express</p>
+              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                <div className='w-5/6 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            <div className='flex flex-col shadow-inner shadow-dark-100 py-2 px-5 rounded-md gap-3'>
+              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- MongoDb</p>
+              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                <div className='w-7/8 h-full bg-white rounded-md'/>
+              </div>
+            </div>
+            </div>
+            {/* <ul className='grid grid-cols-1 sm:grid-cols-2'>
               <li>Photoshop</li>
               <li>A. Illustrator</li>
               <li className="text-nowrap">A. Primere Pro</li>
               <li className="text-nowrap">Figma</li>
-            </ul>
+            </ul> */}
         <div className='grid grid-cols-3 py-5 md:gap-x-2 max-xs:-ml-2'>
           <img src={ Ps } alt="Pr icon" className=" drop-shadow-cyan-500 drop-shadow-lg"/>
           <img src={ Ai } alt="Ai icon" className=" drop-shadow-amber-500 drop-shadow-lg"/>
@@ -71,6 +124,9 @@ const Skills = ()=>{
             <img src={ manWithComp } alt="computer"/>
           </RevealX>
         </div>
+      </div>
+      <div>
+
       </div>
     </section>
   )

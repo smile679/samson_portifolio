@@ -36,7 +36,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 md:mt-10 gap-5">
         <Reveal>
           <div className="w-full flex justify-center items-center">
-            <p className="text-center pt-10">
+            <p className="text-md text-gray-900 text-shadow-lg leading-relaxed max-md:text-center">
                 I'm a passionate <span className="font-semibold text-amber-50">  Full-Stack Developer </span> and Graphic Designer with a
               strong foundation in <span class="font-semibold text-amber-50">HTML, CSS, JavaScript, React, Tailwind CSS,
               Node.js, Express, and MongoDB </span>. I specialize in building responsive,
@@ -55,13 +55,13 @@ const About = () => {
           <div className="flex flex-col gap-y-4">
             {
               aboutSkills && aboutSkills.map(skill=>(
-                <div className="max-w-lg m-auto flex justify-between items-center shadow-inner shadow-dark-100 rounded-lg p-2">
+                <div className="w-full max-w-lg flex items-center shadow-inner shadow-dark-100 rounded-lg p-2">
                   <div className="w-13 h-13 flex justify-center items-center rounded-lg shadow-inner shadow-dark-100 px-2">
                     {skill.icon}
                   </div>
-                  <div className="flex flex-col items-start ml-5">
+                  <div className="flex flex-col justify-start items-start ml-5">
                     <h3>{skill.title}</h3>
-                    <p>{skill.skills}</p>
+                    <p className="text-sm text-gray-900 text-shadow-lg leading-relaxed py-2">{skill.skills}</p>
                   </div>
                 </div>
               ))

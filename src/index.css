@@ -112,9 +112,6 @@
     & h1 {
       @apply  text-gray-800 text-shadow-emerald-800 text-shadow-lg;
     }
-    & p {
-      @apply text-lg text-gray-900 text-shadow-lg leading-relaxed py-2
-  }
 }
 /* 
   .lang-hobbies {
@@ -191,10 +188,10 @@
     }
 
     & .skills-grid {
-      @apply max-w-6xl grid grid-cols-1 md:grid-cols-2;
+      @apply w-full max-w-7xl grid grid-cols-1 md:grid-cols-2;
     }
     & .skills-grid .ul-grid {
-      @apply flex flex-col justify-evenly gap-5;
+      @apply flex flex-col;
     }
     & .skills-grid h2{
       @apply text-gray-800 font-extrabold py-2 text-shadow-emerald-800 text-shadow-lg;
@@ -203,11 +200,12 @@
       @apply text-xl text-white font-bold list-disc grid grid-cols-2 gap-x-10 gap-y-3 pl-2
       text-shadow-emerald-800 text-shadow-lg;
     }
-    & .skills-grid .comp-img img {
+    & .skills-grid .comp-img img{
       @apply w-full md:p-5 lg:p-10
       drop-shadow-green-400 drop-shadow-lg sm:drop-shadow-green-400 sm:drop-shadow-2xl hover:drop-shadow-green-500 hover:drop-shadow-2xl transition-all duration-100 hover:scale-105;
     }
   }
+
   .contact-me {
     @apply w-full center pt-10 sm:pt-20;
 
