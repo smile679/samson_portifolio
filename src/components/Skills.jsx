@@ -26,7 +26,7 @@ const Skills = ()=>{
       </Reveal>
       <div className="skills-grid">
         <div className="ul-grid">
-          <Reveal>
+      <Reveal>
         <div className='py-2 p-5 rounded-lg overflow-x-hidden'>
           <h2>Tech Skills:</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
@@ -55,21 +55,11 @@ const Skills = ()=>{
               </div>
             </div>
           </div>
-          {/* <ul>
-            <li>HTML/CSS</li>
-            <li>Tailwind</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>MongoDB</li>
-            <li>NodeJs</li>
-            <li>ExpressJs</li>
-            <li>RestAPI</li>
-          </ul> */}
-        <div className='flex justify-evenly md:justify-center lg:justify-evenly py-5 max-xs:-ml-2'>
-          <img src={ html33 } alt="html icon" className="w-30 xs:w-60 md:w-40 lg:w-60 drop-shadow-green-800 drop-shadow-sm object-cover"/>
-          <img src={ react } alt="react icon" className="w-10 xs:w-20 md:w-15 lg:w-20 drop-shadow-sky-500 drop-shadow-sm object-cover"/>
-          <img src={ tailwindcss } alt="react icon" className="w-10 xs:w-20 md:w-15 lg:w-20 object-cover"/>
-        </div>
+          <div className='flex justify-evenly md:justify-center lg:justify-evenly py-5 max-xs:-ml-2'>
+            <img src={ html33 } alt="html icon" className="w-30 xs:w-60 md:w-40 lg:w-60 drop-shadow-green-800 drop-shadow-sm object-cover"/>
+            <img src={ react } alt="react icon" className="w-10 xs:w-20 md:w-15 lg:w-20 drop-shadow-sky-500 drop-shadow-sm object-cover"/>
+            <img src={ tailwindcss } alt="react icon" className="w-10 xs:w-20 md:w-15 lg:w-20 object-cover"/>
+          </div>
         </div>
           </Reveal>
           <Reveal>
