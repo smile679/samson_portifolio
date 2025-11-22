@@ -66,51 +66,51 @@ const Skills = ()=>{
           <div className='py-5 px-5 rounded-lg box-border overflow-x-hidden'>
             <h2>Design Skills:</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-            <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- A.Photoshop</p>
-              <div className='w-full max-w-75 h-2 rounded-md shadow-inner shadow-dark-100'>
-                <div className='w-12/13 h-full bg-white rounded-md'/>
+              <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- A.Photoshop</p>
+                <div className='w-full max-w-75 h-2 rounded-md shadow-inner shadow-dark-100'>
+                  <div className='w-12/13 h-full bg-white rounded-md'/>
+                </div>
+              </div>
+              <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-md'>- A. illustrator</p>
+                <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                  <div className='w-5/6 h-full bg-white rounded-md'/>
+                </div>
+              </div>
+              <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- A. Primere</p>
+                <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                  <div className='w-5/6 h-full bg-white rounded-md'/>
+                </div>
+              </div>
+              <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- Figma</p>
+                <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
+                  <div className='w-7/8 h-full bg-white rounded-md'/>
+                </div>
               </div>
             </div>
-            <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-md'>- A. illustrator</p>
-              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
-                <div className='w-5/6 h-full bg-white rounded-md'/>
-              </div>
+              {/* <ul className='grid grid-cols-1 sm:grid-cols-2'>
+                <li>Photoshop</li>
+                <li>A. Illustrator</li>
+                <li className="text-nowrap">A. Primere Pro</li>
+                <li className="text-nowrap">Figma</li>
+              </ul> */}
+            <div className='grid grid-cols-3 py-5 md:gap-x-2 max-xs:-ml-2'>
+              <img src={ Ps } alt="Pr icon" className=" drop-shadow-cyan-500 drop-shadow-lg"/>
+              <img src={ Ai } alt="Ai icon" className=" drop-shadow-amber-500 drop-shadow-lg"/>
+              <img src={ Pr } alt="pr icon" className=" drop-shadow-fuchsia-500 drop-shadow-lg"/>
             </div>
-            <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- A. Primere</p>
-              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
-                <div className='w-5/6 h-full bg-white rounded-md'/>
-              </div>
-            </div>
-            <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-              <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- Figma</p>
-              <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
-                <div className='w-7/8 h-full bg-white rounded-md'/>
-              </div>
-            </div>
-            </div>
-            {/* <ul className='grid grid-cols-1 sm:grid-cols-2'>
-              <li>Photoshop</li>
-              <li>A. Illustrator</li>
-              <li className="text-nowrap">A. Primere Pro</li>
-              <li className="text-nowrap">Figma</li>
-            </ul> */}
-          <div className='grid grid-cols-3 py-5 md:gap-x-2 max-xs:-ml-2'>
-            <img src={ Ps } alt="Pr icon" className=" drop-shadow-cyan-500 drop-shadow-lg"/>
-            <img src={ Ai } alt="Ai icon" className=" drop-shadow-amber-500 drop-shadow-lg"/>
-            <img src={ Pr } alt="pr icon" className=" drop-shadow-fuchsia-500 drop-shadow-lg"/>
-          </div>
           </div>
           </Reveal>
         </div>
         <div className='comp-img w-full flex flex-col justify-evenly max-md:my-10 '>
           <RevealX>
-            <img src={ manInFront } alt="computer" className='hidden md:flex'/>
+            <img src={"https://res.cloudinary.com/dineyc77u/image/upload/v1763842496/manInFront_j6vgzl.png"} alt="computer" className='hidden md:flex'/>
           </RevealX>
           <RevealX>
-            <img src={ manWithComp } alt="computer"/>
+            <img src={"https://res.cloudinary.com/dineyc77u/image/upload/v1763842518/manWithComp_kpghvy.png"} alt="computer"/>
           </RevealX>
         </div>
       </div>

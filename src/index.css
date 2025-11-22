@@ -101,7 +101,7 @@
     @apply w-full flex justify-center items-start drop-shadow-[#3EB489] drop-shadow-2xl
     bg-[url('./images/code.png')] bg-cover bg-no-repeat bg-blend-overlay;
   &  img {
-      @apply  w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px]
+      @apply  w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px]
       border-white border-10 border-dashed border-x-[#3EB489] rounded-full object-cover;
     }
   }
