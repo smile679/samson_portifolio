@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function ProjectOverView() {
@@ -23,18 +24,28 @@ function ProjectOverView() {
 }]
 
   return (
-    <div className="flex flex-col text-center mt-10">
+    <div className="flex flex-col text-center py-20">
       <h1 className="text-4xl text-gray-800 font-extrabold text-shadow-emerald-800 text-shadow-lg py-15">Project Highlight</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {
           projectImages && projectImages.map(pro=> (
-            <div className="relative w-full max-w-md max-h-70 rounded-2xl hover:scale-110 overflow-hidden shadow-md">
-              <img src={pro.image} className="w-full h-full object-cover"/>
-              <h2 className="absolute bottom-3 left-6 text-lg">{pro.title}</h2>
-            </div>
+            <a href={pro.link} target="_blank">
+              <div 
+               className="relative w-full max-w-md max-h-70 rounded-2xl hover:scale-105 overflow-hidden shadow-md"
+              >
+                <img src={pro.image} className="w-full h-full object-cover"/>
+                <h2 className="absolute bottom-3 left-6 text-lg">{pro.title}</h2>
+               </div>
+            </a>
           ))
         }
       </div>
+      <Link to="/projects">
+        <button className="pt-10 text-white hover:text-white/80 font-semibold cursor-pointer">See more...</button>
+      </Link>
+      <svg class="absolute -bottom-8 left-0 w-full h-10" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,0 L110,0C35,150 35,0 0,100z" fill="#059669"></path>
+      </svg>
     </div>
    );
 }
