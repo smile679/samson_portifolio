@@ -6,6 +6,7 @@ import Ai from '../images/Ai.png'
 import Pr from '../images/Pr.png'
 import Reveal from '../Animations/Reveal'
 import RevealX from '../Animations/RevealX'
+import ProjectOverView from './projectOverview'
 
 const Skills = ()=>{
 
@@ -106,9 +107,7 @@ const Skills = ()=>{
           </RevealX>
         </div>
       </div>
-      <div>
-
-      </div>
+      <ProjectOverView />
     </section>
   )
 }
