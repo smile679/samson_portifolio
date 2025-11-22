@@ -35,7 +35,7 @@ const About = () => {
       </Reveal>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 md:mt-10 gap-5">
         <Reveal>
-          <div className="w-full flex justify-center items-center">
+          <div className="w-full">
             <p className="text-md text-gray-900 text-shadow-lg leading-relaxed max-md:text-center">
                 I'm a passionate <span className="font-semibold text-amber-50">  Full-Stack Developer </span> and Graphic Designer with a
               strong foundation in <span class="font-semibold text-amber-50">HTML, CSS, JavaScript, React, Tailwind CSS,
