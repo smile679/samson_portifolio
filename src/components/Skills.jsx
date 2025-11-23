@@ -108,7 +108,7 @@ const Skills = ()=>{
           </RevealX>
         </div>
       </div>
-      <div className='w-full flex justify-between items-center pt-5 text-center gap-2'>
+      <div className='w-full flex justify-evenly items-center pt-5 text-center gap-2'>
         <div className='flex flex-col items-center'>
           <div className='flex items-center'>
             <CountUp
@@ -119,7 +119,7 @@ const Skills = ()=>{
               duration={1}
               className="count-up-text text-gray-900 text-2xl md:text-4xl font-bold text-shadow-gray-800 text-shadow-lg"
             />
-            <h3 className='text-3xl ml-2'>+</h3>
+            <h3 className='text-3xl ml-2'>%</h3>
           </div>
           <h3 className='text-sm sm:text-xl'>Projects Completed</h3>
         </div>
@@ -127,7 +127,7 @@ const Skills = ()=>{
           <div className='flex items-center'>
             <CountUp
               from={0}
-              to={10}
+              to={50}
               separator=","
               direction="up"
               duration={1}
@@ -135,7 +135,7 @@ const Skills = ()=>{
             />
             <h3 className='text-3xl ml-2'>+</h3>
           </div>
-          <h3 className='text-sm sm:text-xl'>Projects Completed</h3>
+          <h3 className='text-sm sm:text-xl'>Website Made</h3>
         </div>
         <div className='flex flex-col items-center'>
           <CountUp
