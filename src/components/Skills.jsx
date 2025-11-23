@@ -7,6 +7,7 @@ import Pr from '../images/Pr.png'
 import Reveal from '../Animations/Reveal'
 import RevealX from '../Animations/RevealX'
 import ProjectOverView from './projectOverView'
+import CountUp from './CountUp'
 
 const Skills = ()=>{
 
@@ -66,19 +67,19 @@ const Skills = ()=>{
             <h2>Design Skills:</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
               <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- A.Photoshop</p>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- Adobe Photoshop</p>
                 <div className='w-full max-w-75 h-2 rounded-md shadow-inner shadow-dark-100'>
                   <div className='w-12/13 h-full bg-white rounded-md'/>
                 </div>
               </div>
               <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-md'>- A. illustrator</p>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-md'>- Adobe illustrator</p>
                 <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
                   <div className='w-5/6 h-full bg-white rounded-md'/>
                 </div>
               </div>
               <div className='flex flex-col shadow-inner shadow-dark-100 py-4 px-5 rounded-md gap-3'>
-                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- A. Primere</p>
+                <p className='text-xl text-white font-bold text-shadow-emerald-800 text-shadow-lg'>- Adobe Primere</p>
                 <div className='w-full max-w-75 h-2 shadow-inner shadow-dark-100 rounded-md'>
                   <div className='w-5/6 h-full bg-white rounded-md'/>
                 </div>
@@ -105,6 +106,47 @@ const Skills = ()=>{
           <RevealX>
             <img src={"https://res.cloudinary.com/dineyc77u/image/upload/v1763842518/manWithComp_kpghvy.png"} alt="computer"/>
           </RevealX>
+        </div>
+      </div>
+      <div className='w-full flex justify-between items-center pt-5 text-center gap-2'>
+        <div className='flex flex-col items-center'>
+          <div className='flex items-center'>
+            <CountUp
+              from={0}
+              to={100}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text text-gray-900 text-2xl md:text-4xl font-bold text-shadow-gray-800 text-shadow-lg"
+            />
+            <h3 className='text-3xl ml-2'>+</h3>
+          </div>
+          <h3 className='text-sm sm:text-xl'>Projects Completed</h3>
+        </div>
+        <div className='flex flex-col items-center'>
+          <div className='flex items-center'>
+            <CountUp
+              from={0}
+              to={10}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text text-gray-900 text-2xl md:text-4xl font-bold text-shadow-gray-800 text-shadow-lg"
+            />
+            <h3 className='text-3xl ml-2'>+</h3>
+          </div>
+          <h3 className='text-sm sm:text-xl'>Projects Completed</h3>
+        </div>
+        <div className='flex flex-col items-center'>
+          <CountUp
+            from={0}
+            to={3}
+            separator=","
+            direction="up"
+            duration={1}
+            className="count-up-text text-gray-900 text-2xl md:text-4xl font-bold text-shadow-gray-800 text-shadow-lg"
+          />
+          <h3 className='text-sm sm:text-xl'>Years of Experiance</h3>
         </div>
       </div>
       <ProjectOverView />

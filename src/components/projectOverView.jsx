@@ -24,7 +24,7 @@ function ProjectOverView() {
 }]
 
   return (
-    <div className="flex flex-col text-center py-20">
+    <div className="flex flex-col text-center py-5">
       <h1 className="text-4xl text-gray-800 font-extrabold text-shadow-emerald-800 text-shadow-lg py-15">Project Highlight</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {
