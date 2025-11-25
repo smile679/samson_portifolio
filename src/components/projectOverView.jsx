@@ -41,7 +41,7 @@ function ProjectOverView() {
         }
       </div>
       <Link to="/projects">
-        <button className="pt-10 text-white hover:text-white/80 font-semibold cursor-pointer">See more...</button>
+        <button className="pt-10 text-white hover:text-white/80 font-semibold hover:underline cursor-pointer">See More</button>
       </Link>
       <svg class="absolute -bottom-8 left-0 w-full h-10" viewBox="0 0 100 100" preserveAspectRatio="none">
         <path d="M0,0 L110,0C35,150 35,0 0,100z" fill="#059669"></path>
