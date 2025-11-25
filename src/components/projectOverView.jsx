@@ -31,7 +31,7 @@ function ProjectOverView() {
           projectImages && projectImages.map(pro=> (
             <a href={pro.link} target="_blank">
               <div 
-               className="relative w-full max-w-md max-h-70 rounded-2xl hover:scale-105 overflow-hidden shadow-md"
+               className="relative w-full max-w-md max-h-70 rounded-2xl hover:scale-105 overflow-hidden shadow-md shadow-gray-800"
               >
                 <img src={pro.image} className="w-full h-full object-cover"/>
                 <h2 className="absolute bottom-3 left-6 text-lg">{pro.title}</h2>
@@ -41,7 +41,7 @@ function ProjectOverView() {
         }
       </div>
       <Link to="/projects">
-        <button className="pt-10 text-white hover:text-white/80 font-semibold hover:underline cursor-pointer">See More</button>
+        <button className="pt-10 text-white hover:text-blue-800 font-semibold hover:underline cursor-pointer">See More</button>
       </Link>
       <svg class="absolute -bottom-8 left-0 w-full h-10" viewBox="0 0 100 100" preserveAspectRatio="none">
         <path d="M0,0 L110,0C35,150 35,0 0,100z" fill="#059669"></path>

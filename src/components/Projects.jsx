@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react'
 
 const Projects = ()=>{
   // const [showText, setShowText] = useState({movie: false, foodie: false})
-  const [showText, setShowText] = useState(false)
+  const [showText, setShowText] = useState({movie : false, foodie : false, form : false, bakery : false, merkato : false,})
 
   useEffect(() => {
   const isMobile = window.innerWidth < 640;
@@ -70,7 +70,7 @@ const Projects = ()=>{
               <h3>🔥 Features</h3>
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, movie:!prev.movie}))}>{showText.movie ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText.movie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🔍 Search movies by title</li>
                 <li>🎞️ Browse trending and popular movies</li>
                 <li>🧾 View detailed movie info: title, rating, description, poster, and more</li>
@@ -118,7 +118,7 @@ const Projects = ()=>{
               <h3>🔥 Features</h3>
               <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🔍 Search any recipe by name</li>
                 <li>🖼️ Clean and responsive recipe card layout</li>
                 <li>📄 Detailed recipe pages with ingredients and instructions</li>
@@ -169,9 +169,9 @@ const Projects = ()=>{
           <div className='flex flex-col items-start my-2'>
             <div className='w-full flex justify-between'>
               <h3>🔒 User Roles</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
+              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, form:!prev.form}))}>{showText.form ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2 ml-5 list-disc'>
+              { showText.form ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2 ml-5 list-disc'>
                 <li>Users can register, log in, change their password, and view uploaded images.</li>
                 <li>Admins can do everything a User can, plus upload and delete images.</li>
               </ul> : ""}
@@ -208,9 +208,9 @@ const Projects = ()=>{
           <div className='flex flex-col items-start my-2'>
             <div className='w-full flex justify-between'> 
               <h3>🔥 Features</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
+              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, bakery:!prev.bakery}))}>{showText.bakery ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText.bakery ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🖼️ Clean and responsive bakery card layout</li>
                 <li>📄 Detailed bakery pages with ingredients and instructions</li>
                 <li>🛒 Add to cart functionality</li>
@@ -242,7 +242,7 @@ const Projects = ()=>{
     </div>
 
     <div className='project-card'>
-      <h3>Bakery Fullstack app</h3>
+      <h3>Merkato eCommerce app</h3>
       <div className='project-grid'>
         <div className='flex flex-col justify-evenly space-y-3'>
         <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn3_yz6lwo.jpg" alt="Bakery Front image"/>
@@ -267,9 +267,9 @@ const Projects = ()=>{
           <div className='flex flex-col items-start my-2'>
             <div className='w-full flex justify-between'> 
               <h3>🔥 Features</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
+              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, merkato:!prev.merkato}))}>{showText.merkato ? "Hide Text" : "Show More"}</button>
             </div>
-              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
+              { showText.merkato ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
                 <li>🖼️ Clean and responsive ecommerce card layout</li>
                 <li>📄 Detailed pages with ingredients and instructions</li>
                 <li>🛒 Add to cart functionality</li>
