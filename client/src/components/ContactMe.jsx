@@ -48,9 +48,9 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-    const TEMPLATE_KEY = import.meta.env.VITE_EMAILJS_TEMPLATE_KEY;
-    const SERVICE_KEY = import.meta.env.VITE_EMAILJS_SERVICE_KEY;
+    // const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    // const TEMPLATE_KEY = import.meta.env.VITE_EMAILJS_TEMPLATE_KEY;
+    // const SERVICE_KEY = import.meta.env.VITE_EMAILJS_SERVICE_KEY;
 
     let isValid = true;
 
@@ -95,7 +95,7 @@ const ContactMe = () => {
       };
 
       emailjs
-        .send(SERVICE_KEY, TEMPLATE_KEY, templateParams, PUBLIC_KEY)
+        .send(import.meta.env.VITE_EMAILJS_SERVICE_KEY, import.meta.env.VITE_EMAILJS_TEMPLATE_KEY, templateParams, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
         .then(() => {
           dispatchError({ type: "reset" });
           dispatchMail({ type: "reset" });
