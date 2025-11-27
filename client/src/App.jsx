@@ -5,12 +5,14 @@ import Projects from './components/Projects'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={ <Home/> } />
-        <Route path='/projects' element={ <Projects/> } />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <Home/> } />
+          <Route path='/projects' element={ <Projects/> } />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 

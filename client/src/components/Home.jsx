@@ -4,6 +4,7 @@ import Services from './Services'
 import Skills from './Skills'
 import ContactMe from './ContactMe'
 import Header from './Header'
+import GeminiChatbot from "../geminiChatbot/GeminiChatBot";
 
 const Home =()=> {
     
@@ -14,6 +15,7 @@ const Home =()=> {
     <Services/>
     <Skills/>
     <ContactMe/>
+    <GeminiChatbot />
   </section>
 }
 
