@@ -176,7 +176,7 @@ export default function useGeminiChat() {
         {
           id: Date.now() + 2,
           role: 'assistant',
-          content: 'Error contacting Gemini 2.5. Check console.'
+          content: 'Something is wrong.Try again later'
         }
       ]);
     } finally {
