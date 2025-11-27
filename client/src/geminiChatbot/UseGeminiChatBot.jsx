@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 
 export default function useGeminiChat() {
   const [messages, setMessages] = useState([
-    { id: 1, role: 'assistant', content: 'Hello — ask me about Samson and his projects!' }
+    { id: 1, role: 'assistant', content: 'Hello — Ask me about Samson and his projects!' }
   ]);
   const [loading, setLoading] = useState(false);
   const messagesRef = useRef(null);
