@@ -20,7 +20,7 @@ export default function GeminiChatbot() {
       <div
         className={
           icon
-            ? "w-full max-w-xl mx-auto bg-emerald-800 rounded-2xl p-4 shadow-lg border border-white z-40 "
+            ? "w-full max-w-xl mx-auto max-sm:p-3 bg-emerald-800 rounded-2xl p-4 shadow-lg border border-white z-40 "
             : "hidden"
         }
       >
@@ -75,7 +75,7 @@ export default function GeminiChatbot() {
         </form>
       </div>
       <div
-        className="w-full flex flex-col justify-center items-center hover:cursor-pointer animate-pulse"
+        className="w-full flex flex-col justify-center items-center max-sm:px-2 hover:cursor-pointer animate-puls"
         onClick={() => setIcon(true)}
       >
         <img
