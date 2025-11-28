@@ -16,15 +16,15 @@ export default function GeminiChatbot() {
   }
 
   return (
-    <div className="flex flex-col fixed bottom-5 right-0 md:right-10 mr-2">
+    <div className="w-full max-w-lg flex flex-col fixed bottom-5 right-2 sm:right-5 pl-5">
       <div
         className={
           icon
-            ? "w-full max-w-xl mx-auto max-sm:p-3 bg-emerald-800 rounded-2xl p-4 shadow-lg border border-white z-40 "
+            ? " bg-emerald-800 rounded-2xl p-4 shadow-lg border border-white z-40"
             : "hidden"
         }
       >
-        <div className="w-full flex justify-between items-center">
+        <div className="flex justify-between items-center">
           <h2 className="text-xl font-semibold mb-3">AI Portfolio Assistant</h2>
           <button
             onClick={() => setIcon(false)}
@@ -75,14 +75,14 @@ export default function GeminiChatbot() {
         </form>
       </div>
       <div
-        className="w-full flex flex-col justify-center items-center max-sm:px-2 hover:cursor-pointer animate-puls"
+        className="flex flex-col justify-center items-center self-end hover:cursor-pointer animate-puls"
         onClick={() => setIcon(true)}
       >
         <img
           src="https://res.cloudinary.com/dineyc77u/image/upload/v1764242628/pngwing.com_2_fx9yds.png"
           alt="Ai icon"
           className={`${
-            icon ? "w-15 self-end" : "w-15"
+            icon ? "w-15 self-end" : "w-20"
           } sm:w-20 md:w-25 lg:w-30 drop-shadow-emerald-950 drop-shadow-xl`}
         />
         <h3
