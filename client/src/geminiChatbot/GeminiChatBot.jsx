@@ -43,8 +43,8 @@ export default function GeminiChatbot() {
               className={m.role === "user" ? "text-right" : "text-left"}
             >
               <div
-                className={`w-full max-w-1/2 inline-block px-4 py-2 rounded-xl overflow-hidden ${
-                  m.role === "user" ? "bg-amber-500/20" : "bg-white/10"
+                className={`w-full inline-block px-4 py-2 rounded-xl overflow-hidden ${
+                  m.role === "user" ? "bg-amber-500/20 max-w-1/2" : "bg-white/10 max-w-3/4"
                 }`}
               >
                 <p className="text-[12px] sm:text-sm text-white sm:leading-6 whitespace-pre-wrap text-pretty text-start">
@@ -54,7 +54,7 @@ export default function GeminiChatbot() {
             </div>
           ))}
           {loading && (
-            <p className="text-sm text-gray-200 animate-pulse">thinking...</p>
+            <p className="text-sm text-gray-200 animate-pulse pl-2">thinking...</p>
           )}
         </div>
 
