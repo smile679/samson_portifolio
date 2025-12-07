@@ -58,9 +58,9 @@ export default function GeminiChatbot() {
           )}
         </div>
 
-        <form onSubmit={handleSubmit} className="flex gap-2">
+        <form onSubmit={handleSubmit} className="flex items-center gap-2 flex-nowrap">
           <input
-            className="flex-1 text-white text-sm bg-transparent border border-white/50 rounded-xl px-3 py-2 focus:outline-none"
+            className="flex-1 min-w-0 text-white text-sm bg-transparent border border-white/50 rounded-xl px-3 py-2 focus:outline-none"
             placeholder="Ask about Samson, skills, or projects..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
