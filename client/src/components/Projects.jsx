@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Portfolio",
       images: [portfolio],
-      description: "I built this portfolio from scratch with React, Tailwind CSS, and JavaScript. Includes a Home page, About section, Skills, and Contact form.",
+      description: "I designed and developed this portfolio website from scratch, starting from UI/UX layout to full implementation.It includes a clean Home page, structured About section, detailed Skills overview, and a fully functional Contact form.",
       techStack: ["JavaScript", "React", "Tailwind CSS"],
       demoLink: "https://samsongideyportifolio.netlify.app/",
       githubLink: "https://github.com/smile679/samson_portifolio.git",
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "Movie Scope App",
       images: [movieScope2, movieScope],
-      description: "MovieScope lets users browse, search, and discover movies with a responsive UI.",
+      description: "MovieScope is a responsive movie discovery web application that allows users to browse trending films, search titles, and view detailed information including rating, description, and posters. The application is built using JavaScript, React, Tailwind CSS v4, and React Router to deliver a clean, fast, and interactive user experience.",
       techStack: ["JavaScript", "React", "Tailwind CSS", "React Router"],
       features: [
         "Search movies by title",
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: "Foodie Delight App",
       images: [foodiehome2, foodie2],
-      description: "Discover and order meals from around the world with a modern responsive web application.",
+      description: "Bakery Fullstack App is a complete bakery shopping platform that allows users to browse items, view details, add products to the cart, and simulate order checkout.It is built using JavaScript, React, Tailwind CSS v4, Node.js, Express, and MongoDB, and provides a responsive and interactive shopping experience.",
       techStack: ["JavaScript", "React", "Tailwind CSS", "React Router"],
       features: [
         "Search recipes by name",

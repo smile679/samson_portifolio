@@ -219,7 +219,7 @@
       @apply w-full rounded-2xl max-sm:object-contain drop-shadow-gray-800 drop-shadow-lg;
     }
     & .project-info {
-      @apply flex flex-col justify-between pl-3 md:pl-5;
+      @apply flex flex-col pl-3 md:pl-5 gap-y-5;
     }
     & .project-buttons {
       @apply w-full flex max-xs:flex-col justify-center items-center max-md:mb-5;
@@ -246,7 +246,7 @@
      hover:scale-105;
   }
   @utility button3 {
-     @apply bg-gray-900 text-gray-200 font-bold text-nowrap max-lg:px-3 py-2 md:py-2 xs:ml-3 lg:px-8 rounded-lg 
+     @apply bg-gray-900 text-gray-200 font-bold text-nowrap max-lg:px-3 py-3 xs:ml-3 lg:px-8 rounded-lg 
      transition-all duration-300 cursor-pointer hover:bg-gray-800 hover:text-white shadow-gray-800/50 shadow-lg
      hover:ring-0 hover:scale-105;
   }

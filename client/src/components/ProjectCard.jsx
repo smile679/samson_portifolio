@@ -4,15 +4,15 @@ const ProjectCard = ({ title, images, description, features, techStack, demoLink
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="project-card my-8 p-5 rounded-lg shadow-inner text-white">
+    <div className="project-card my-8 p-5 rounded-lg  text-white">
       <h3 className="text-2xl font-semibold mb-3">{title}</h3>
-      <div className="project-grid flex flex-col md:flex-row gap-5">
+      <div className="flex flex-col md:flex-row gap-5">
         <div className="flex flex-col space-y-3 md:w-1/2">
           {images.map((img, idx) => (
             <img key={idx} src={img} alt={`${title} screenshot`} className="rounded-md" loading="lazy" />
           ))}
         </div>
-        <div className="project-info md:w-1/2 flex flex-col justify-between">
+        <div className="project-info md:w-1/2">
           <p className="text-[1rem] leading-6 mb-3">{description}</p>
 
           {techStack && (
@@ -45,12 +45,12 @@ const ProjectCard = ({ title, images, description, features, techStack, demoLink
           <div className="flex gap-3 mt-3 flex-wrap">
             {demoLink && (
               <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                <button className="button px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 transition">Live Demo</button>
+                <button className="button transition">Live Demo</button>
               </a>
             )}
             {githubLink && (
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <button className="button3 px-4 py-2 rounded bg-gray-700 hover:bg-gray-800 transition">GitHub</button>
+                <button className="button3 transition">GitHub</button>
               </a>
             )}
           </div>
