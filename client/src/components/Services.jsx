@@ -1,4 +1,5 @@
 import Reveal from "../Animations/Reveal";
+import RevealX from "../Animations/RevealX";
 const Services = ()=>{
 
   return <section className="services" name='Service'>
@@ -11,7 +12,7 @@ const Services = ()=>{
     </div>
     </Reveal>
     <div className="service-list">
-      <Reveal>
+      <RevealX>
       <div>
          <h3>FRONTEND DEVELOPMENT</h3>
         <ul>
@@ -19,15 +20,16 @@ const Services = ()=>{
           <li>Building UIs with Tailwind CSS and React</li>
           <li>Debugging layout issues and improving existing code</li>
           <li>Creating responsive websites using HTML, CSS, and JavaScript</li>
-          <li>Converting designs (from Figma or XD) into pixel-perfect web pages</li>
+          <li>Converting designs from Figma into pixel-perfect web pages</li>
         </ul>
       </div>
-      </Reveal>
+      </RevealX>
       <Reveal>
         <div>
           <h3>BACKEND DEVELOPMENT</h3>
           <ul>
-            <li className="list-none">Building RESTful APIs using Node.js and Express</li>
+            <li className="list-none">💻 What I can help you with:</li>
+            <li>Building RESTful APIs using Node.js and Express</li>
             <li>Implementing authentication & authorization (JWT, bcrypt, roles, permissions)</li>
             <li>Creating secure and scalable backend architectures</li>
             <li>Handling server-side logic, validation, and error management</li>
@@ -35,32 +37,30 @@ const Services = ()=>{
         </ul>
         </div>
       </Reveal>
+    </div>
+    <div className="service-list">
       <Reveal>
       <div>
         <h3>GRAPHICS DESIGN</h3>
         <ul>
           <li className="list-none">🖌 What I can help you with:</li>
-          <li>Designing logos, banners, and social media graphics</li>
           <li>Creating clean, professional UI mockups in Figma</li>
+          <li>Designing logos, banners, and social media graphics</li>
           <li>Editing and retouching images using Photoshop</li>
-          <li>Designing marketing materials like flyers, posters, and business cards</li>
         </ul>
       </div>
       </Reveal>
-      <Reveal>
+      <RevealX>
       <div>
         <h3><span>Bonus:-</span> SOCIAL MEDIA MARKETING</h3>
         <ul>
           <li className="list-none">🚀 What I can help you with</li>
-          <li>Social Media managment</li>
+          <li>Social Media management</li>
           <li>Facebook Ads (Meta Ads Manager)</li>
-          <li>Setting up and managing ad campaigns</li>
-          <li>Audience research and targeting</li>
-          <li>Optimizing campaigns for reach, clicks, or conversions</li>
           <li>Designing branded posts using Canva or Photoshop</li>
         </ul>
       </div>
-      </Reveal>
+      </RevealX>
     </div>
     
   </section>

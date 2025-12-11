@@ -42,7 +42,7 @@ const Info = () =>{
       </Reveal>
       <Reveal>
         <div className='text-center w-1/1'>
-          <p className='para'>" I focus on building clean, responsive, and user-friendly websites"</p>
+          <p className='para'>"I build modern, secure, and scalable web applications with clean UI and strong backend architecture."</p>
         </div>
       </Reveal>
         <div className='flex flex-col-reverse'>

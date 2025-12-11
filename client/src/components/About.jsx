@@ -10,7 +10,7 @@ const About = () => {
   },
   {
     icon : <Database />,
-    title : "Bakend Mastery",
+    title : "Backend Mastery",
     skills : "NodeJS, ExpressJs, MongoDb, and API architecture",
   },
   {
@@ -37,17 +37,20 @@ const About = () => {
         <Reveal>
           <div className="w-full">
             <p className="text-md text-gray-900 text-shadow-lg leading-relaxed max-md:text-center">
-                I'm a passionate <span className="font-semibold text-amber-50">  Full-Stack Developer </span> and Graphic Designer with a
-              strong foundation in <span class="font-semibold text-amber-50">HTML, CSS, JavaScript, React, Tailwind CSS,
-              Node.js, Express, and MongoDB </span>. I specialize in building responsive,
-              user friendly web applications from intuitive frontend interfaces to
-              robust backend systems. With experience in tools like Figma,
-              Illustrator, and Photoshop, I combine creativity with technical
-              expertise to craft visually compelling and high-performing digital
-              experiences. I enjoy solving problems end-to-end, optimizing both
-              UI/UX and backend functionality. I'm always eager to learn new
-              technologies, stay updated with the latest design and development
-              trends, and bring fresh, innovative ideas to every project I work on.
+                I'm a dedicated <span className="font-semibold text-amber-50"> Full-Stack MERN Developer </span>
+                with strong experience building  <span className="font-semibold">modern, scalable,</span>  and user focused 
+                <span className="font-semibold"> web applications.</span>
+                My expertise spans both <span className="font-semibold text-amber-50">frontend and backend development</span>, allowing me to deliver complete 
+                end-to-end solutions from clean, responsive interfaces to secure API architectures and database management.
+                I build with <span className="font-semibold text-amber-50">HTML, CSS, JavaScript, React, Tailwind CSS,
+              Node.js, Express, and MongoDB </span>and I follow clean coding practices, reusable component design, and 
+              performance driven development. I enjoy solving real problems through technology, turning ideas into functional, production-ready applications.
+              I also have experience in UI/UX tools such as <span className="font-semibold text-amber-50">Figma, Illustrator, and Photoshop</span>, 
+              which helps me blend strong visual design with 
+              technical execution to create seamless, intuitive user experiences.<br/>
+              <span className="font-semibold text-amber-50">
+                My goal is to build fast, secure, maintainable applications that deliver real value for users and businesses.
+              </span>
               </p>
           </div>
         </Reveal>

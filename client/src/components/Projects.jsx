@@ -1,305 +1,110 @@
-import portfolio from '../images/projectImages/portfolio.webp'
-import movieScope from '../images/projectImages/movieScope.webp'
-import movieScope2 from '../images/projectImages/movieScope2.jpg'
-import foodiehome2 from '../images/projectImages/foodiehome2.webp'
-import foodie2 from '../images/projectImages/foodie2.webp'
-import bakeryFront from '../images/projectImages/Bakery_front.jpg'
-import bakeryListing from '../images/projectImages/Bakery_listing.jpg'
-import form from '../images/projectImages/form.jpeg'
-import { useState, useEffect } from 'react'
+// src/components/Projects.jsx
+import portfolio from '../images/projectImages/portfolio.webp';
+import movieScope from '../images/projectImages/movieScope.webp';
+import movieScope2 from '../images/projectImages/movieScope2.jpg';
+import foodiehome2 from '../images/projectImages/foodiehome2.webp';
+import foodie2 from '../images/projectImages/foodie2.webp';
+import bakeryFront from '../images/projectImages/Bakery_front.jpg';
+import bakeryListing from '../images/projectImages/Bakery_listing.jpg';
+import form from '../images/projectImages/form.jpeg';
+import ProjectCard from './ProjectCard.jsx';
 
-const Projects = ()=>{
-  // const [showText, setShowText] = useState({movie: false, foodie: false})
-  const [showText, setShowText] = useState({movie : false, foodie : false, form : false, bakery : false, merkato : false,})
+// Main Projects component
+const Projects = () => {
+  const projectsData = [
+    {
+      title: "Portfolio",
+      images: [portfolio],
+      description: "I built this portfolio from scratch with React, Tailwind CSS, and JavaScript. Includes a Home page, About section, Skills, and Contact form.",
+      techStack: ["JavaScript", "React", "Tailwind CSS"],
+      demoLink: "https://samsongideyportifolio.netlify.app/",
+      githubLink: "https://github.com/smile679/samson_portifolio.git",
+    },
+    {
+      title: "Movie Scope App",
+      images: [movieScope2, movieScope],
+      description: "MovieScope lets users browse, search, and discover movies with a responsive UI.",
+      techStack: ["JavaScript", "React", "Tailwind CSS", "React Router"],
+      features: [
+        "Search movies by title",
+        "Browse trending and popular movies",
+        "View detailed movie info",
+        "Add to cart functionality",
+        "Fully responsive design",
+      ],
+      demoLink: "https://moviescopapp.netlify.app/",
+      githubLink: "https://github.com/smile679/Movie-App.git",
+    },
+    {
+      title: "Foodie Delight App",
+      images: [foodiehome2, foodie2],
+      description: "Discover and order meals from around the world with a modern responsive web application.",
+      techStack: ["JavaScript", "React", "Tailwind CSS", "React Router"],
+      features: [
+        "Search recipes by name",
+        "Responsive recipe card layout",
+        "Detailed recipe pages",
+        "Add to cart functionality",
+        "Cart summary and order receipt",
+        "Order and payment simulation",
+      ],
+      demoLink: "https://foodiedelightapp.netlify.app/",
+      githubLink: "https://github.com/smile679/Foodie-Delight.git",
+    },
+    {
+      title: "Form Backend Only",
+      images: [form],
+      description: "Node.js + Express backend for user registration, authentication, and image uploads with User/Admin roles.",
+      techStack: ["Node.js", "Express", "MongoDB", "JWT", "Multer", "dotenv"],
+      features: [
+        "Users can register, login, change password, and view uploads",
+        "Admins can upload and delete images",
+      ],
+      githubLink: "https://github.com/smile679/Form-backend-only.git",
+    },
+    {
+      title: "Bakery Fullstack App",
+      images: [bakeryFront, bakeryListing],
+      description: "A full-stack bakery e-commerce app for browsing and ordering baked goods.",
+      techStack: ["JavaScript", "React", "Tailwind CSS", "React Router", "Node.js", "Express", "MongoDB"],
+      features: [
+        "Responsive bakery card layout",
+        "Detailed product pages",
+        "Add to cart functionality",
+        "Cart summary and order receipt",
+        "Order/payment simulation",
+      ],
+      demoLink: "https://bakery-full-stack-webisite-front.onrender.com",
+      githubLink: "https://github.com/smile679/Bakery-Full-stack-Webisite.git",
+    },
+    {
+      title: "Merkato eCommerce App",
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn3_yz6lwo.jpg",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn2_apgwdx.jpg",
+      ],
+      description: "Full-featured eCommerce platform with secure PayPal payments and admin management.",
+      techStack: ["JavaScript", "React", "Tailwind CSS", "Redux Toolkit", "Node.js", "Express", "MongoDB", "PayPal API"],
+      features: [
+        "Responsive ecommerce card layout",
+        "Detailed product pages",
+        "Add to cart functionality",
+        "Cart summary and order receipt",
+        "Order/payment simulation",
+      ],
+      demoLink: "https://ecommerce-app-1-q5og.onrender.com",
+      githubLink: "https://github.com/smile679/eCommerce-app.git",
+    },
+  ];
 
-  useEffect(() => {
-  const isMobile = window.innerWidth < 640;
-  setShowText({ movie: !isMobile, foodie: !isMobile });
-}, []);
-
-  return <section className='max-w-6xl mx-auto min-h-screen flex flex-col py-10 px-5' id='projectId'>
-    <h1 className='my-5 text-shadow-gray-800 text-shadow-lg'>Projects</h1>
-    <div className='project-card'>
-        <h3>Portfolio</h3>
-        <div className='project-grid'>
-          <img src={portfolio} alt="portfolio image"/>
-        <div className='project-info'>
-            <p className='text-[1rem] leading-6 text-white'>I built this portfolio website entirely from scratch
-              starting with the design and transforming it into a fully functional site. The project is developed using 
-              <span className='text-amber-400 font-bold'> JavaScript</span>, 
-              <span className='text-gray-800 font-bold'> React </span>, and the latest <span className='text-sky-400 font-bold'> Tailwind CSS v4. </span>
-              It includes a clean Home page, an About section, a detailed Skills section, and a fully functional Contact form.
-            </p>
-          <div className='project-buttons'>
-            <a
-              href="https://samsongideyportifolio.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <button className="button px-2 py-2 my-2 max-sm:my-3"> Visit Live Website</button>
-            </a>
-            <a
-              href="https://github.com/smile679/samson_portifolio.git"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <button className="button3"> Code on Github</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className='project-card'>
-        <h3>Movie Scope App</h3>
-      <div className='project-grid'>
-        <div className='flex flex-col justify-evenly space-y-3'>
-          <img src={ movieScope2 } alt="Movie-Scope App image"/>
-          <img src={ movieScope } alt="Movie-Scope App image"/>
-        </div>
-      <div className='project-info'>
-          <p className='text-[1rem] leading-6 text-white text-pretty my-2'>MovieScope is a modern and responsive web application that allows users to browse, search, 
-            and discover movies from a wide selection of genres. The project is developed using 
-            <span className='text-amber-400 font-bold'> JavaScript</span>, 
-            <span className='text-gray-800 font-bold'> React </span>, and the latest 
-            <span className='text-sky-400 font-bold'> Tailwind CSS v4. </span>
-            <span className='text-gray-800 font-bold'> and React Router </span> it provides a clean and interactive user experience.
-          </p>
-          <div className='flex flex-col items-start my-2'>
-            <div className='w-full flex justify-between'>
-              <h3>🔥 Features</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, movie:!prev.movie}))}>{showText.movie ? "Hide Text" : "Show More"}</button>
-            </div>
-              { showText.movie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
-                <li>🔍 Search movies by title</li>
-                <li>🎞️ Browse trending and popular movies</li>
-                <li>🧾 View detailed movie info: title, rating, description, poster, and more</li>
-                <li>🛒 Add to cart functionality</li>
-                <li>📱 Fully responsive design for both desktop and mobile devices</li>
-              </ul> : ""}
-          </div>
-          <div className='project-buttons'>
-            <a
-            href="https://moviescopapp.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button px-2 py-2 my-2 max-sm:my-3"> Visit Live Website</button>
-          </a>
-          <a
-            href="https://github.com/smile679/Movie-App.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <button className="button3"> Code on Github</button>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div className='project-card'>
-      <h3>Foodie Delight App</h3>
-      <div className='project-grid'>
-        <div className='flex flex-col justify-evenly space-y-3'>
-        <img src={ foodiehome2 } alt="Foodie Delight image"/>
-        <img src={ foodie2 } alt="Foodie Delight image"/>
-      </div>
-      <div className='project-info'>
-          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>Foodie Delight is a modern, responsive web application that helps users discover and now order delicious meals from around the world. Whether you're in the mood for pasta, dessert,
-             or something brand new, Foodie Delight lets you search, explore, and order with ease. Build with
-            <span className='text-amber-400 font-bold'> JavaScript</span>, 
-            <span className='text-gray-800 font-bold'> React </span>, and the latest
-            <span className='text-sky-400 font-bold'> Tailwind CSS v4. </span>
-            <span className='text-gray-800 font-bold'> and React Router </span> it provides a clean and interactive user experience.
-          </p>
-          <div className='flex flex-col items-start my-2'>
-            <div className='w-full flex justify-between'>
-              <h3>🔥 Features</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, foodie:!prev.foodie}))}>{showText.foodie ? "Hide Text" : "Show More"}</button>
-            </div>
-              { showText.foodie ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
-                <li>🔍 Search any recipe by name</li>
-                <li>🖼️ Clean and responsive recipe card layout</li>
-                <li>📄 Detailed recipe pages with ingredients and instructions</li>
-                <li>🛒 Add to cart functionality</li>
-                <li>🧾 Cart summary and order receipt</li>
-                <li>💳 Order and payment simulation (demo)</li>
-                <li>🌐 Built with React, Tailwind CSS, and React Router</li>
-                <li>📱 Fully responsive design for both desktop and mobile devices</li>
-              </ul> : ""}
-          </div>
-          <div className='project-buttons'>
-            <a
-            href="https://foodiedelightapp.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button px-2 py-2 max-sm:my-3"> Visit Live Website</button>
-          </a>
-          <a
-            href="https://github.com/smile679/Foodie-Delight.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <button className="button3">
-            Code on Github</button>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div className='project-card'>
-      <h3>Form Backend Only</h3>
-      <div className='project-grid'>
-        <div className='flex flex-col justify-evenly space-y-3'>
-        <img src={ form } alt="Form"/>
-        {/* <img src={ foodie2 } alt="Foodie Delight image"/> */}
-      </div>
-      <div className='project-info'>
-          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>This is a Node.js + Express backend project for handling user registration, authentication, and image uploads.
-            The system supports User and Admin roles. Built with
-            <span className='text-amber-400 font-bold'> NodeJS(expressJs)</span>, 
-            <span className='text-gray-800 font-bold'> MongoDB with Mongoose </span>,
-            <span className='text-amber-400 font-bold'> dotenv for environment variables </span>
-            <span className='text-sky-400 font-bold'> , Multer (file uploads) </span>
-            <span className='text-gray-800 font-bold'> , JWT (JSON Web Tokens) for authentication. </span> it provides a secure and user-friendly experience.
-          </p>
-          <div className='flex flex-col items-start my-2'>
-            <div className='w-full flex justify-between'>
-              <h3>🔒 User Roles</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, form:!prev.form}))}>{showText.form ? "Hide Text" : "Show More"}</button>
-            </div>
-              { showText.form ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2 ml-5 list-disc'>
-                <li>Users can register, log in, change their password, and view uploaded images.</li>
-                <li>Admins can do everything a User can, plus upload and delete images.</li>
-              </ul> : ""}
-          </div>
-          <div className='project-buttons'>
-          <a
-            href="https://github.com/smile679/Form-backend-only.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <button className="button3">
-            Code on Github</button>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div className='project-card'>
-      <h3>Bakery Fullstack app</h3>
-      <div className='project-grid'>
-        <div className='flex flex-col justify-evenly space-y-3'>
-        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763417061/bakerFront_xvptpc.jpg" alt="Bakery Front image"/>
-        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763417091/bakerSecond_owhgcg.jpg" alt="Bakery Listing image"/>
-      </div>
-      <div className='project-info'>
-          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>Bakery Fullstack app is a modern, responsive web application that helps users discover and now order delicious baked goods from around the world. Whether you're in the mood for bread, pastries,
-             or something brand new, Bakery Fullstack app lets you search, explore, and order with ease. Build with
-            <span className='text-amber-400 font-bold'> JavaScript</span>,
-            <span className='text-gray-800 font-bold'> React </span>, and the latest
-            <span className='text-sky-400 font-bold'> Tailwind CSS v4. </span>
-            <span className='text-gray-800 font-bold'> and React Router </span> it provides a clean and interactive user experience.
-          </p>
-          <div className='flex flex-col items-start my-2'>
-            <div className='w-full flex justify-between'> 
-              <h3>🔥 Features</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, bakery:!prev.bakery}))}>{showText.bakery ? "Hide Text" : "Show More"}</button>
-            </div>
-              { showText.bakery ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
-                <li>🖼️ Clean and responsive bakery card layout</li>
-                <li>📄 Detailed bakery pages with ingredients and instructions</li>
-                <li>🛒 Add to cart functionality</li>
-                <li>🧾 Cart summary and order receipt</li>
-                <li>💳 Order and payment simulation (demo)</li>
-                <li>🌐 Built with React, Tailwind CSS, and React Router</li>
-                <li>📱 Fully responsive design for both desktop and mobile devices</li>
-              </ul> : ""}
-          </div>
-          <div className='project-buttons'>
-            <a
-            href="https://bakery-full-stack-webisite-front.onrender.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button px-2 py-2 max-sm:my-3"> Visit Live Website</button>
-          </a>
-          <a
-            href="https://github.com/smile679/Bakery-Full-stack-Webisite.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <button className="button3">
-            Code on Github</button>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <div className='project-card'>
-      <h3>Merkato eCommerce app</h3>
-      <div className='project-grid'>
-        <div className='flex flex-col justify-evenly space-y-3'>
-        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn3_yz6lwo.jpg" alt="Bakery Front image"/>
-        <img src="https://res.cloudinary.com/dineyc77u/image/upload/v1763652914/nn2_apgwdx.jpg" alt="Bakery Listing image"/>
-      </div>
-      <div className='project-info'>
-          <p className='text-[1rem] leading-6 text-white text-pretty my-1'>
-            eCommerce App is a full-featured, responsive online shopping platform built to provide users with a smooth and secure buying experience.
-            From browsing products and managing carts to completing secure PayPal payments, the app delivers a complete modern shopping flow.
-            Powered by 
-            <span className='text-yellow-400 font-bold'> JavaScript </span>, 
-            <span className='text-blue-400 font-bold'> React </span>, 
-            <span className='text-sky-400 font-bold'> Tailwind CSS v4 </span>, 
-            <span className='text-purple-400 font-bold'> Redux Toolkit </span>, and 
-            <span className='text-green-400 font-bold'> Node.js & Express </span>, 
-            it ensures fast performance and real-time updates.
-            Integrated with 
-            <span className='text-indigo-400 font-bold'> MongoDB </span> and 
-            <span className='text-emerald-400 font-bold'> PayPal Payments </span>, 
-            the platform offers secure authentication, admin management, and a seamless user experience from start to finish.
-          </p>
-          <div className='flex flex-col items-start my-2'>
-            <div className='w-full flex justify-between'> 
-              <h3>🔥 Features</h3>
-              <button className='text-[0.8rem] text-emerald-400 font-semibold sm:hidden' onClick={()=>setShowText(prev=>({...prev, merkato:!prev.merkato}))}>{showText.merkato ? "Hide Text" : "Show More"}</button>
-            </div>
-              { showText.merkato ? <ul className='text-[1.1rem] text-gray-800 font-semibold my-2'>
-                <li>🖼️ Clean and responsive ecommerce card layout</li>
-                <li>📄 Detailed pages with ingredients and instructions</li>
-                <li>🛒 Add to cart functionality</li>
-                <li>🧾 Cart summary and order receipt</li>
-                <li>💳 Order and payment simulation (demo)</li>
-                <li>🌐 Built with React, Tailwind CSS, and React Router, nodeJS, expressJs, Mongoose</li>
-                <li>📱 Fully responsive design for both desktop and mobile devices</li>
-              </ul> : ""}
-          </div>
-          <div className='project-buttons'>
-            <a
-            href="https://ecommerce-app-1-q5og.onrender.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button px-2 py-2 max-sm:my-3"> Visit Live Website</button>
-          </a>
-          <a
-            href="https://github.com/smile679/eCommerce-app.git"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <button className="button3">
-            Code on Github</button>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-}
+  return (
+    <section id="projectId" className="max-w-6xl mx-auto min-h-screen flex flex-col py-10 px-5">
+      <h1 className="text-4xl font-bold text-shadow-gray-800 mb-10">Projects</h1>
+      {projectsData.map((project) => (
+        <ProjectCard key={project.title} {...project} />
+      ))}
+    </section>
+  );
+};
 
 export default Projects;
