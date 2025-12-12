@@ -8,6 +8,7 @@ import bakeryFront from '../images/projectImages/Bakery_front.jpg';
 import bakeryListing from '../images/projectImages/Bakery_listing.jpg';
 import form from '../images/projectImages/form.jpeg';
 import ProjectCard from './ProjectCard.jsx';
+import Header from './Header.jsx';
 
 
 const Projects = () => {
@@ -99,7 +100,8 @@ const Projects = () => {
 
   return (
     <section id="projectId" className="max-w-6xl mx-auto min-h-screen flex flex-col py-10 px-5">
-      <h1 className="text-4xl font-bold text-shadow-gray-800 mb-10">Projects</h1>
+      <Header />
+      <h1 className="text-4xl font-bold text-shadow-gray-800 my-15">Projects</h1>
       {projectsData && projectsData.map((project) => (
         <ProjectCard key={project.title} {...project} />
       ))}

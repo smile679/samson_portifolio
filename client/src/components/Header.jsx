@@ -2,11 +2,13 @@ import { useState,useRef, useEffect } from "react";
 import { Link } from "react-scroll";
 import  phone from "../images/phone.png"
 import Reveal from "../Animations/Reveal";
+import { useLocation } from "react-router-dom";
 
 const Header=()=>{
 const menuRef = useRef(null);
 const buttonRef = useRef(null);
 const [showMenu, setShowMenu] = useState(false);
+const location = useLocation();
 
 const handleTouchOutside = (event) => {
   const isInsideMenu = menuRef.current?.contains(event.target);
@@ -30,41 +32,49 @@ const handleTouchOutside = (event) => {
   return (
      <header className="wrapper">
       <nav>
-        <h2>
-        Portfolio<span className="animate-ping">..</span>
-        </h2>
-      <Reveal>
-        <ul>
-          <li>
-            <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Hero' spy={true} smooth={true} duration={500} offset={-75}>
-              Home
-             </Link>
-          </li>
-          <li>
-            <Link activeClass="text-[#45f8b7] border-b-2" to='About' spy={true} smooth={true} duration={500} offset={-75}>
-            About
-            </Link>
-            </li>
-          <li>
-            <Link activeClass="text-[#45f8b7] border-b-2" to='Service' spy={true} smooth={true} duration={500} offset={-75}>
-            Service
-            </Link>
-          </li>
-            <li>
-            <Link activeClass="text-[#45f8b7] border-b-2" to='Skills' spy={true} smooth={true} duration={500} offset={-75}>
-             Skils
-            </Link>
-            </li>
-        </ul>
-        </Reveal>
-        <div className="contact" type="button" onClick={()=>{
-       const button = document.getElementById("contact-button");
-           button.scrollIntoView({behavior: "smooth"});
-        }}
-        >
-           <img src={phone} alt="contact"/>
-           <h3>Contact Me</h3>
-        </div>
+        <a href="/">
+          <h2>
+            Portfolio<span className="animate-ping">..</span>
+          </h2>
+        </a>
+        {
+        location.pathname === '/projects' ? null :
+           <Reveal>
+            <ul>
+              <li>
+                <Link activeClass="text-[#45f8b7] border-b-2 pb-0.5" to='Hero' spy={true} smooth={true} duration={500} offset={-75}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="text-[#45f8b7] border-b-2" to='About' spy={true} smooth={true} duration={500} offset={-75}>
+                About
+                </Link>
+                </li>
+              <li>
+                <Link activeClass="text-[#45f8b7] border-b-2" to='Service' spy={true} smooth={true} duration={500} offset={-75}>
+                Service
+                </Link>
+              </li>
+                <li>
+                <Link activeClass="text-[#45f8b7] border-b-2" to='Skills' spy={true} smooth={true} duration={500} offset={-75}>
+                Skils
+                </Link>
+                </li>
+            </ul>
+            </Reveal>
+        }
+        {
+        location.pathname === '/projects' ? null :
+          <div className="contact" type="button" onClick={()=>{
+            const button = document.getElementById("contact-button");
+                button.scrollIntoView({behavior: "smooth"});
+              }}
+              >
+                <img src={phone} alt="contact"/>
+                <h3>Contact Me</h3>
+          </div>
+        }
       </nav>
 
       <nav className="flex sm:hidden">

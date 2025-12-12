@@ -47,8 +47,8 @@ const About = () => {
               performance driven development. I enjoy solving real problems through technology, turning ideas into functional, production-ready applications.
               I also have experience in UI/UX tools such as <span className="font-semibold text-amber-50">Figma, Illustrator, and Photoshop</span>, 
               which helps me blend strong visual design with 
-              technical execution to create seamless, intuitive user experiences.<br/>
-              <span className="font-semibold text-amber-50">
+              technical execution to create seamless, intuitive user experiences.
+              <span className="text-amber-50">
                 My goal is to build fast, secure, maintainable applications that deliver real value for users and businesses.
               </span>
               </p>
