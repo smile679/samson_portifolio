@@ -13,7 +13,7 @@ const ProjectCard = ({ title, images, description, features, techStack, demoLink
           ))}
         </div>
         <div className="project-info md:w-1/2">
-          <p className="text-[1rem] leading-6 mb-3">{description}</p>
+          <p className="text-[1rem] leading-6 mb-3 text-pretty">{description}</p>
 
           {techStack && (
             <div className="mb-3 flex flex-wrap gap-2">

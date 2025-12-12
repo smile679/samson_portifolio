@@ -127,7 +127,7 @@ const Skills = ()=>{
           <div className='flex items-center'>
             <CountUp
               from={0}
-              to={50}
+              to={10}
               separator=","
               direction="up"
               duration={1}
@@ -138,14 +138,17 @@ const Skills = ()=>{
           <h3 className='text-sm sm:text-xl'>Website Made</h3>
         </div>
         <div className='flex flex-col items-center'>
-          <CountUp
-            from={0}
-            to={3}
-            separator=","
-            direction="up"
-            duration={1}
-            className="count-up-text text-gray-900 text-2xl sm:text-4xl md:text-5xl font-bold text-shadow-gray-800 text-shadow-md"
-          />
+          <div className='flex items-center'>
+            <CountUp
+              from={0}
+              to={2}
+              separator=","
+              direction="up"
+              duration={1}
+              className="count-up-text text-gray-900 text-2xl sm:text-4xl md:text-5xl font-bold text-shadow-gray-800 text-shadow-md"
+            />
+            <h3 className='text-3xl ml-2 font-extrabold'>+</h3>
+          </div>
           <h3 className='text-sm sm:text-xl'>Years of Experiance</h3>
         </div>
       </div>
