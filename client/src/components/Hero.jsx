@@ -6,7 +6,7 @@ const Hero =()=>{
   return <section className="hero" name='Hero'>
       <Info/>
       <Image/>
-  </section>
+    </section>
 }
 
 export default Hero;

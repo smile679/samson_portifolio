@@ -6,6 +6,8 @@ import foodiehome2 from '../images/projectImages/foodiehome2.webp';
 import foodie2 from '../images/projectImages/foodie2.webp';
 import bakeryFront from '../images/projectImages/Bakery_front.jpg';
 import bakeryListing from '../images/projectImages/Bakery_listing.jpg';
+import mobileShop from '../images/projectImages/mobileShop.jpg';
+import mobileShop2 from '../images/projectImages/mobileShop2.jpg';
 import form from '../images/projectImages/form.jpeg';
 import ProjectCard from './ProjectCard.jsx';
 import Header from './Header.jsx';
@@ -86,16 +88,51 @@ const Projects = () => {
       githubLink: "https://github.com/smile679/Movie-App.git",
     },
     {
-      title: "Form Backend Only",
-      images: [form],
-      description: "Node.js + Express backend for user registration, authentication, and image uploads with User/Admin roles.",
-      techStack: ["Node.js", "Express", "MongoDB", "JWT", "Multer", "dotenv"],
+      title: "Mobile Shop Management App",
+      images: [mobileShop, mobileShop2],
+      description:
+        "Product showcase and admin management system for a mobile phone shop, allowing customers to view available devices while enabling admins to manage inventory.",
+      techStack: [
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
       features: [
-        "Users can register, login, change password, and view uploads",
-        "Admins can upload and delete images",
+        "Public product listing for new and used mobile devices and accessories",
+        "Admin-only access to add, edit, and delete products",
+        "Device filtering by brand, condition, and storage options",
+        "Responsive UI optimized for mobile and desktop devices",
+        "Clean separation between admin and customer views"
+      ],
+      demoLink: "https://mobileshop-1mku.onrender.com",
+      githubLink: "https://github.com/smile679/mobileShop.git",
+    }
+,
+    {
+      title: "Form Backend API",
+      images: [form],
+      description:
+        "Backend REST API built with Node.js and Express to handle user authentication, role-based access control, and image uploads.",
+      techStack: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Multer",
+        "dotenv"
+      ],
+      features: [
+        "User registration and secure login with JWT authentication",
+        "Role-based authorization for User and Admin access",
+        "Password update functionality for users",
+        "Image upload and deletion handled by Admin users",
+        "Protected routes and environment-based configuration"
       ],
       githubLink: "https://github.com/smile679/Form-backend-only.git",
     }
+
   ];
 
   return (
