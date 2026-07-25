@@ -1,19 +1,19 @@
 // src/components/Projects.jsx
 // import portfolio from '../images/projectImages/portfolio.webp';
-import movieScope from "@/assets/images/projectImages/movieScope.webp";
-import movieScope2 from "@/assets/images/projectImages/movieScope2.jpg";
-import foodiehome2 from '@/assets/images/projectImages/foodiehome2.webp';
-import foodie2 from "@/assets/images/projectImages/foodie2.webp";
-import bakeryFront from "@/assets/images/projectImages/Bakery_front.jpg";
-import bakeryListing from "@/assets/images/projectImages/Bakery_listing.jpg";
-import mobileShop from "@/assets/images/projectImages/mobileShop.jpg";
-import mobileShop2 from "@/assets/images/projectImages/mobileShop2.jpg";
-import form from "@/assets/images/projectImages/form.jpeg";
-import gef_01 from "@/assets/images/projectImages/gef_01.jpg";
-import gef_02 from "@/assets/images/projectImages/gef_02.jpg";
-import bokra_01 from "@/assets/images/projectImages/bokra_01.png";
-import bokra_02 from "@/assets/images/projectImages/bokra_02.png";
-import cbe_01 from "@/assets/images/projectImages/cbe_verifier.png";
+// import movieScope from "@/assets/images/projectImages/movieScope.webp";
+// import movieScope2 from "@/assets/images/projectImages/movieScope2.jpg";
+// import foodiehome2 from '@/assets/images/projectImages/foodiehome2.webp';
+// import foodie2 from "@/assets/images/projectImages/foodie2.webp";
+// import bakeryFront from "@/assets/images/projectImages/Bakery_front.jpg";
+// import bakeryListing from "@/assets/images/projectImages/Bakery_listing.jpg";
+// import mobileShop from "@/assets/images/projectImages/mobileShop.jpg";
+// import mobileShop2 from "@/assets/images/projectImages/mobileShop2.jpg";
+// // import form from "@/assets/images/projectImages/form.jpeg";
+// import gef_01 from "@/assets/images/projectImages/gef_01.jpg";
+// import gef_02 from "@/assets/images/projectImages/gef_02.jpg";
+// import bokra_01 from "@/assets/images/projectImages/bokra_01.png";
+// import bokra_02 from "@/assets/images/projectImages/bokra_02.png";
+// import cbe_01 from "@/assets/images/projectImages/cbe_verifier.png";
 
 
 import ProjectCard from './ProjectCard.jsx';
@@ -23,8 +23,40 @@ import Header from './header/Layout.jsx';
 const Projects = () => {
   const projectsData = [
     {
+      title: "Applicant Management Dashboard",
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784958952/Annotation_2026-07-25_084507_rwpioq.png",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784958950/Annotation_2026-07-25_084640_wag33s.png",
+      ],
+      description:
+        "Built as a practical frontend challenge for an internship application, this admin dashboard lets a hiring administrator manage internship applicants end-to-end against a real REST API. Admins can log in, browse a paginated applicant list with live search, filtering, and sorting, drill into a full applicant profile, update application status, leave internal notes, and view summary statistics with charts. The app is fully responsive and handles loading, empty, error, and expired-session states throughout, with a centralized Axios layer that automatically attaches auth tokens and redirects on session expiry.",
+      techStack: [
+        "JavaScript",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "React Router",
+        "Axios",
+        "Recharts",
+      ],
+      features: [
+        "Token-based login/logout with auto-expiring sessions",
+        "Paginated, searchable, filterable, and sortable applicant table",
+        "Full applicant detail view with status updates and internal notes",
+        "Dashboard with summary stats and status/track breakdown charts",
+        "Collapsible sidebar with responsive mobile drawer navigation",
+        "Loading, empty, error, and expired-session states throughout",
+      ],
+      demoLink: "https://applicant-managment-system.vercel.app",
+      githubLink: "https://github.com/smile679/applicant_managment_system.git",
+    },
+    {
       title: "Bakery Fullstack App",
-      images: [bakeryFront, bakeryListing],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1763417061/bakerFront_xvptpc.jpg",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1763417091/bakerSecond_owhgcg.jpg",
+      ],
       description:
         "The Bakery Fullstack App was built to make it easier for customers to discover, browse, and order baked goods online without navigating multiple platforms. Many small bakeries struggle to present their products clearly or handle orders efficiently, so this app brings everything into one streamlined experience. Users can explore breads, pastries, and cakes, learn details about each item, add them to their cart, and place orders, while the admin side manages products and content. The goal is to provide a smooth, modern shopping experience for both customers and bakery owners.",
       techStack: [
@@ -48,7 +80,10 @@ const Projects = () => {
     },
     {
       title: "Gefrem Engineering Website",
-      images: [gef_01, gef_02],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1782205362/gef_01_pjen9p.jpg",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960133/gef_02_mar87b.png",
+      ],
       description:
         "The Gefrem Engineering website was developed to establish a strong online presence for an engineering and construction company. The platform showcases the company's services, expertise, completed projects, and business values in a modern and professional way. The goal was to create a visually appealing, responsive website that helps potential clients understand the company's capabilities, explore its services, and easily get in touch for inquiries and project consultations.",
       techStack: [
@@ -101,7 +136,10 @@ const Projects = () => {
     },
     {
       title: "Bokra Construction Website",
-      images: [bokra_01, bokra_02],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960448/Annotation_2026-07-25_091943_xfkzqj.png",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960459/bokra_03_b4kzbs.png",
+      ],
       description:
         "Developed a modern and responsive corporate website for Bokra Construction to showcase the company's construction services, completed projects, and industry expertise. The platform was designed to strengthen the company's online presence, provide potential clients with detailed information about its capabilities, and create a professional channel for project inquiries and business communication.",
       techStack: [
@@ -126,7 +164,10 @@ const Projects = () => {
     },
     {
       title: "Foodie Delight App",
-      images: [foodiehome2, foodie2],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1763846372/foodiehome2_hlitdu.webp",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960672/foodie2_nbypda.webp",
+      ],
       description:
         "The Bakery Fullstack App was created to give customers and bakery owners a smoother, more organized online experience. Many local bakeries have great products but lack an easy way for customers to explore items, view details, or place orders without confusion. This application solves that by offering a clean marketplace where users can browse breads, pastries, and cakes, read descriptions, add items to their cart, and check out with a simple flow. At the same time, the admin panel allows bakery owners to manage products and content efficiently, creating a unified system that keeps both sides connected and reduces the friction found in typical bakery websites.",
       techStack: ["JavaScript", "React", "Tailwind CSS", "React Router"],
@@ -143,7 +184,10 @@ const Projects = () => {
     },
     {
       title: "Mobile Shop Management App",
-      images: [mobileShop, mobileShop2],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1782205772/mobileShop_gzukzk.jpg",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960793/mobileShop3_mldiom.jpg",
+      ],
       description:
         "Product showcase and admin management system for a mobile phone shop, allowing customers to view available devices while enabling admins to manage inventory.",
       techStack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
@@ -159,7 +203,10 @@ const Projects = () => {
     },
     {
       title: "Movie Scope App",
-      images: [movieScope2, movieScope],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960990/movieScope2_jforpp.jpg",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1763846926/movieScope_vhccly.webp",
+      ],
       description:
         "MovieScope is a responsive movie discovery web application that allows users to browse trending films, search titles, and view detailed information including rating, description, and posters. The application is built using JavaScript, React, Tailwind CSS v4, and React Router to deliver a clean, fast, and interactive user experience.",
       techStack: ["JavaScript", "React", "Tailwind CSS", "React Router"],
@@ -175,7 +222,10 @@ const Projects = () => {
     },
     {
       title: "CBE Receipt Verifier",
-      images: [cbe_01, cbe_01],
+      images: [
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1782337296/cbe_verifier_irsc9i.png",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1782337296/cbe_verifier_irsc9i.png",
+      ],
       description:
         "A lightweight web tool that automates Commercial Bank of Ethiopia (CBE) receipt verification. Instead of manually constructing verification URLs, users simply enter an FT number and the last 8 digits of an account number — the tool instantly builds and opens the correct CBE verification link. Designed for anyone in Ethiopia who regularly verifies CBE transaction receipts, with a clean minimal UI and keyboard-first UX built for speed.",
       techStack: ["JavaScript", "React", "Tailwind CSS", "Vite"],
