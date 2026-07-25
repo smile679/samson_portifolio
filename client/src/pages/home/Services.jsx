@@ -248,13 +248,16 @@ const Services = () => {
                 Let's talk about what you're building and how I can help.
               </p>
             </div>
-            <a
-              href="#contact-button"
+            <button
               className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors duration-200
               bg-emerald-400 hover:bg-emerald-500 hover:cursor-pointer"
+              onClick={() => {
+                const button = document.getElementById("Contact");
+                button.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Get In Touch
-            </a>
+            </button>
           </div>
         </Reveal>
       </div>
