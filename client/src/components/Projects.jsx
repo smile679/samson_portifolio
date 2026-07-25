@@ -1,21 +1,3 @@
-// src/components/Projects.jsx
-// import portfolio from '../images/projectImages/portfolio.webp';
-// import movieScope from "@/assets/images/projectImages/movieScope.webp";
-// import movieScope2 from "@/assets/images/projectImages/movieScope2.jpg";
-// import foodiehome2 from '@/assets/images/projectImages/foodiehome2.webp';
-// import foodie2 from "@/assets/images/projectImages/foodie2.webp";
-// import bakeryFront from "@/assets/images/projectImages/Bakery_front.jpg";
-// import bakeryListing from "@/assets/images/projectImages/Bakery_listing.jpg";
-// import mobileShop from "@/assets/images/projectImages/mobileShop.jpg";
-// import mobileShop2 from "@/assets/images/projectImages/mobileShop2.jpg";
-// // import form from "@/assets/images/projectImages/form.jpeg";
-// import gef_01 from "@/assets/images/projectImages/gef_01.jpg";
-// import gef_02 from "@/assets/images/projectImages/gef_02.jpg";
-// import bokra_01 from "@/assets/images/projectImages/bokra_01.png";
-// import bokra_02 from "@/assets/images/projectImages/bokra_02.png";
-// import cbe_01 from "@/assets/images/projectImages/cbe_verifier.png";
-
-
 import ProjectCard from './ProjectCard.jsx';
 import Header from './header/Layout.jsx';
 
