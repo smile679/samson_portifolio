@@ -11,7 +11,7 @@ const Projects = () => {
         "https://res.cloudinary.com/dineyc77u/image/upload/v1784958950/Annotation_2026-07-25_084640_wag33s.png",
       ],
       description:
-        "Built as a practical frontend challenge for an internship application, this admin dashboard lets a hiring administrator manage internship applicants end-to-end against a real REST API. Admins can log in, browse a paginated applicant list with live search, filtering, and sorting, drill into a full applicant profile, update application status, leave internal notes, and view summary statistics with charts. The app is fully responsive and handles loading, empty, error, and expired-session states throughout, with a centralized Axios layer that automatically attaches auth tokens and redirects on session expiry.",
+        "Built as a frontend challenge for an internship application, this admin dashboard lets a hiring administrator manage internship applicants end-to-end against a real REST API. Admins can log in, browse a paginated applicant list with live search, filtering, and sorting, drill into a full applicant profile, update application status, leave internal notes, and view summary statistics with charts. The app is fully responsive and handles loading, empty, error, and expired-session states throughout, with a centralized Axios layer that automatically attaches auth tokens and redirects on session expiry.",
       techStack: [
         "JavaScript",
         "React",
