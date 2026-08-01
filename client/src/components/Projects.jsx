@@ -12,7 +12,7 @@ const Projects = () => {
       ],
       description:
         "Built as a frontend challenge for an internship application, this admin dashboard lets a hiring administrator manage internship applicants end-to-end against a real REST API. Admins can log in, browse a paginated applicant list with live search, filtering, and sorting, drill into a full applicant profile, update application status, leave internal notes, and view summary statistics with charts. The app is fully responsive and handles loading, empty, error, and expired-session states throughout, with a centralized Axios layer that automatically attaches auth tokens and redirects on session expiry.",
-      techStack: [
+         techStack: [
         "JavaScript",
         "React",
         "Vite",
@@ -148,7 +148,8 @@ const Projects = () => {
       title: "Foodie Delight App",
       images: [
         "https://res.cloudinary.com/dineyc77u/image/upload/v1763846372/foodiehome2_hlitdu.webp",
-        "https://res.cloudinary.com/dineyc77u/image/upload/v1784960672/foodie2_nbypda.webp",
+        // "https://res.cloudinary.com/dineyc77u/image/upload/v1784960672/foodie2_nbypda.webp",
+        "https://res.cloudinary.com/dineyc77u/image/upload/v1785576265/Annotation_2026-08-01_122059_uu2tt9.png"
       ],
       description:
         "The Bakery Fullstack App was created to give customers and bakery owners a smoother, more organized online experience. Many local bakeries have great products but lack an easy way for customers to explore items, view details, or place orders without confusion. This application solves that by offering a clean marketplace where users can browse breads, pastries, and cakes, read descriptions, add items to their cart, and check out with a simple flow. At the same time, the admin panel allows bakery owners to manage products and content efficiently, creating a unified system that keeps both sides connected and reduces the friction found in typical bakery websites.",

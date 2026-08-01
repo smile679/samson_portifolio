@@ -105,10 +105,11 @@ function ProjectOverView() {
         </div>
         <Link
           to="/projects"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="mt-10 py-0.5 px-3 text-emerald-200 text-md font-mono tracking-wide rounded-full inline-flex items-center gap-1.5
         bg-emerald-900/85 border border-emerald-400/45 backdrop-blur-md hover:scale-110"
         >
-        <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0 animate-caret-blink" />
+          <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0 animate-caret-blink" />
           See More
         </Link>
       </div>
