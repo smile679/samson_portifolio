@@ -57,7 +57,7 @@ const ContactMe = () => {
     if (!mail.Name) {
       dispatchError({ type: "name", payload: "Invalid Name!" });
       isValid = false;
-    } else if (mail.Name.length <= 3) {
+    } else if (mail.Name.length <= 1) {
       dispatchError({ type: "name", payload: "sorry, Name too Short!" });
       isValid = false;
     } else {
