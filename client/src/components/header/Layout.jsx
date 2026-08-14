@@ -78,7 +78,7 @@ const Header = () => {
             }}
           >
             <MdConnectWithoutContact size={25} />
-            <h3>Hire Me</h3>
+            <h3>Contact Me</h3>
           </button>
         )}
       </nav>
